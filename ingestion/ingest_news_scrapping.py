@@ -111,7 +111,7 @@ if __name__ == "__main__":
     run_scraping_loop(
         interval_seconds=60,
         fresh_minutes=60,
-        enable_bfm=True,
+        enable_bfm=False,
         enable_ts=True,
         enable_yahoo=True,
         enable_zb=True,

@@ -32,10 +32,10 @@ from zoneinfo import ZoneInfo
 
 # -------------------- Config --------------------
 PARIS = ZoneInfo("Europe/Paris")
-MINUTES = 60                     # freshness window for '< minutes' scrapers
-MAX_LINKS_PER_SOURCE = 100        # per-source article URL cap
-MAX_WORKERS = 16                 # parallel fetch for article pages
-TIMEOUT = 12                     # HTTP timeout seconds
+MINUTES = 60                     
+MAX_LINKS_PER_SOURCE = 100        
+MAX_WORKERS = 16                 
+TIMEOUT = 12                     
 
 UA = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0 Safari/537.36",
