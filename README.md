@@ -1,40 +1,83 @@
-o run the ingestion pipeline, start Zookeeper and Kafka in the background (daemon mode), then create the news_raw topic.
+# Kafka Quickstart for Local Development (WSL + Python)
 
-Start services
-# Start Zookeeper in daemon mode
+## 1. Start Zookeeper and Kafka
+
+```bash
+cd ~/kafka_2.13-3.6.0
+
 bin/zookeeper-server-start.sh -daemon config/zookeeper.properties
-
-# Start Kafka in daemon mode
 bin/kafka-server-start.sh -daemon config/server.properties
+```
 
+Check that ports are open:
 
-You can verify they’re running with:
+```bash
+ss -ltnp | grep -E "2181|9092"
+```
 
-jps -l
+## 2. Kafka Topics Management
 
-Create the required topic
-bin/kafka-topics.sh --create \
-  --topic news_raw \
-  --bootstrap-server localhost:9092 \
-  --partitions 1 \
-  --replication-factor 1
+### List topics
+```bash
+bin/kafka-topics.sh --bootstrap-server localhost:9092 --list
+```
 
-Useful Kafka commands
-# List existing topics
-bin/kafka-topics.sh --list --bootstrap-server localhost:9092
+### Create a topic
+```bash
+bin/kafka-topics.sh --bootstrap-server localhost:9092 --create   --topic news_raw --partitions 1 --replication-factor 1
+```
 
-# Describe a topic
-bin/kafka-topics.sh --describe --topic news_raw --bootstrap-server localhost:9092
+### Describe a topic
+```bash
+bin/kafka-topics.sh --bootstrap-server localhost:9092 --describe --topic news_raw
+```
 
-# Test producer
-bin/kafka-console-producer.sh --topic news_raw --bootstrap-server localhost:9092
+### Delete a topic
+```bash
+bin/kafka-topics.sh --bootstrap-server localhost:9092 --delete --topic news_raw
+```
 
-# Test consumer
-bin/kafka-console-consumer.sh \
-  --topic news_raw \
-  --from-beginning \
-  --bootstrap-server localhost:9092
+## 3. Producing and Consuming Messages
 
-Stop Kafka services
+### Console consumer
+```bash
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092   --topic news_raw --from-beginning
+```
+
+## 4. Full Kafka Reset (useful when cluster is stuck)
+
+```bash
 bin/kafka-server-stop.sh
 bin/zookeeper-server-stop.sh
+rm -rf /tmp/kafka-logs /tmp/zookeeper
+bin/zookeeper-server-start.sh -daemon config/zookeeper.properties
+bin/kafka-server-start.sh -daemon config/server.properties
+```
+
+## 5. Python Ingestion Script Usage
+
+From your project directory:
+
+```bash
+cd rag_markets
+source venv/bin/activate
+python -m ingestion.ingest_dummy
+python -m ingestion.ingest_news_finhub
+```
+
+## 6. Useful Commands Summary
+
+```bash
+# list topics
+bin/kafka-topics.sh --bootstrap-server localhost:9092 --list
+
+# create topic
+bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic <name> --partitions 1 --replication-factor 1
+
+# consume messages
+bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic <name> --from-beginning
+
+# stop services
+bin/kafka-server-stop.sh
+bin/zookeeper-server-stop.sh
+```
