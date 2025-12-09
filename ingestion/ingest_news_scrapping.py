@@ -1,27 +1,23 @@
-# ingestion/ingest_news_scraping.py
+
 from __future__ import annotations
 
 import time
 from datetime import datetime, timezone
 from typing import Set, Tuple
 
-import pandas as pd  # pour gérer les Timestamp / NaT
+import pandas as pd  
 
 from .config import NEWS_TOPIC
 from .kafka_producer import create_producer, send_json
 from .ticker_resolver_local import resolve_ticker_from_text
-
-# On importe ton script de scraping comme un module
-from . import scrapping
+from . import scrapper
 
 
 def row_to_event(row: pd.Series) -> dict:
-    """Convertit une ligne du DataFrame scrapping -> event normalisé pour Kafka."""
     source = row["source"]
     title = row["title"]
     pub = row.get("published_at")
 
-    # published_at -> ISO UTC
     published_at_iso: str | None
     if pd.isna(pub):
         published_at_iso = None
@@ -34,26 +30,23 @@ def row_to_event(row: pd.Series) -> dict:
 
     now_iso = datetime.now(timezone.utc).isoformat()
 
-    # Résolution du ticker à partir du titre
     ticker = resolve_ticker_from_text(title)
     tickers = [ticker] if ticker else []
 
-    # ID simple : combinaison source + titre
     event_id = f"{source}:{title}"
 
     event = {
         "id": event_id,
         "source": source,
         "headline": title,
-        "description": None,      # on n’a pas encore de corps d’article
-        "url": None,              # ton scraper ne les stocke pas encore
+        "description": None,      
+        "url": None,              
         "tickers": tickers,
         "published_at": published_at_iso,
         "received_at": now_iso,
         "raw": {
             "source": source,
             "title": title,
-            # On peut ajouter la date brute pour debug
             "published_at_raw": str(pub),
         },
     }
@@ -68,12 +61,7 @@ def run_scraping_loop(
     enable_yahoo: bool = True,
     enable_zb: bool = True,
 ) -> None:
-    """
-    Boucle infinie :
-    - scrape les sources (via scrapping.run_once)
-    - filtre les nouveaux titres (seen_keys)
-    - envoie dans Kafka (topic NEWS_TOPIC)
-    """
+   
 
     producer = create_producer(client_id="web-scraper-ingestor")
     seen_keys: Set[Tuple[str, str]] = set()  # (source, title)
@@ -86,8 +74,8 @@ def run_scraping_loop(
     while True:
         loop_start = time.perf_counter()
 
-        # On réutilise ta fonction run_once comme "lib"
-        df = scrapping.run_once(
+        
+        df = scrapper.run_once(
             fresh_minutes=fresh_minutes,
             enable_bfm=enable_bfm,
             enable_ts=enable_ts,
@@ -113,7 +101,6 @@ def run_scraping_loop(
             producer.flush()
             print(f"[SCRAP] Batch done, sent {new_count} new events.")
 
-        # Respecter l’intervalle de polling
         elapsed = time.perf_counter() - loop_start
         to_sleep = max(0.0, interval_seconds - elapsed)
         print(f"[SCRAP] Sleeping {to_sleep:.1f}s...\n")
@@ -121,7 +108,6 @@ def run_scraping_loop(
 
 
 if __name__ == "__main__":
-    # Version simple : toutes les sources activées, interval et fenetre par défaut
     run_scraping_loop(
         interval_seconds=60,
         fresh_minutes=60,
