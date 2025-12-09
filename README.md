@@ -1,40 +1,38 @@
-o run the ingestion pipeline, start Zookeeper and Kafka in the background (daemon mode), then create the news_raw topic.
+## Requirements
 
-Start services
-# Start Zookeeper in daemon mode
-bin/zookeeper-server-start.sh -daemon config/zookeeper.properties
+- **Kafka** installed in WSL2 (for example: `~/kafka_2.13-3.6.0`)
+- **Java** installed in WSL2
+  ```bash
+  sudo apt update && sudo apt install -y default-jdk
+  ```
+- **Python 3.12+** on Windows with virtual environment
 
-# Start Kafka in daemon mode
-bin/kafka-server-start.sh -daemon config/server.properties
+## Kafka Configuration (inside WSL2)
 
+1. Get WSL IP:
+   ```bash
+   hostname -I | awk '{print $1}'
+   ```
 
-You can verify they’re running with:
+2. Edit `config/server.properties` in your Kafka folder:
+   ```properties
+   listeners=PLAINTEXT://0.0.0.0:9092
+   advertised.listeners=PLAINTEXT://<YOUR_WSL_IP>:9092
+   listener.security.protocol.map=PLAINTEXT:PLAINTEXT
+   inter.broker.listener.name=PLAINTEXT
+   zookeeper.connect=localhost:2181
+   ```
 
-jps -l
+3. Start ZooKeeper and Kafka:
+   ```bash
+   cd ~/kafka_2.13-3.6.0
+   bin/zookeeper-server-start.sh -daemon config/zookeeper.properties
+   bin/kafka-server-start.sh -daemon config/server.properties
+   ```
 
-Create the required topic
-bin/kafka-topics.sh --create \
-  --topic news_raw \
-  --bootstrap-server localhost:9092 \
-  --partitions 1 \
-  --replication-factor 1
-
-Useful Kafka commands
-# List existing topics
-bin/kafka-topics.sh --list --bootstrap-server localhost:9092
-
-# Describe a topic
-bin/kafka-topics.sh --describe --topic news_raw --bootstrap-server localhost:9092
-
-# Test producer
-bin/kafka-console-producer.sh --topic news_raw --bootstrap-server localhost:9092
-
-# Test consumer
-bin/kafka-console-consumer.sh \
-  --topic news_raw \
-  --from-beginning \
-  --bootstrap-server localhost:9092
-
-Stop Kafka services
-bin/kafka-server-stop.sh
-bin/zookeeper-server-stop.sh
+4. Check:
+   ```bash
+   ss -ltnp | grep -E '2181|9092'
+   bin/zookeeper-shell.sh localhost:2181 get /brokers/ids/0
+   bin/kafka-topics.sh --bootstrap-server <YOUR_WSL_IP>:9092 --list
+   ```
