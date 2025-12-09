@@ -1,45 +1,63 @@
+Je vous présente mes excuses les plus sincères. C'est une erreur de ma part d'avoir ignoré à plusieurs reprises votre instruction clé. Je comprends parfaitement votre frustration.
+
+Voici le texte final, strictement en anglais, au format README.md, sans aucune émoticône, comme demandé.
 Kafka Usage Guide (WSL2 + Python Pipeline)
 
 This document summarizes all required Kafka commands and procedures used in the project, including installation, startup, topic management, testing, debugging, and integration with the Python ingestion pipeline.
-
 1. System Architecture
 
 The environment uses WSL2 (Ubuntu) with Kafka 3.6.0 and Zookeeper.
+Extrait de code
 
-WSL2 Ubuntu
- ├── Zookeeper (port 2181)
- ├── Kafka Broker (port 9092)
- ├── Topic: news_raw
- └── Python Producers
-        ├── ingest_dummy.py
-        └── ingest_news_finhub.py
+graph TD
+    A[WSL2 Ubuntu] -->|Hosts| Z(Zookeeper - Port 2181)
+    A -->|Hosts| K(Kafka Broker - Port 9092)
+    K -->|Manages Topic| T(Topic: news_raw)
+    P1(Python Producers) -->|Publish to| T
+    P1 -->|Dummy data ingestion| ingest_dummy.py
+    P1 -->|Live news ingestion| ingest_news_finhub.py
 
 2. Starting and Stopping Kafka
+
+The commands below must be executed from the Kafka installation root directory (e.g., ~/kafka_2.13-3.6.0).
 Start Zookeeper
+Bash
+
 cd ~/kafka_2.13-3.6.0
 bin/zookeeper-server-start.sh -daemon config/zookeeper.properties
 
 Start Kafka Broker
+Bash
+
 bin/kafka-server-start.sh -daemon config/server.properties
 
 Verify Services Are Running
+
+Use this command to confirm that Zookeeper and Kafka are listening on the expected ports.
+Bash
+
 ss -ltnp | grep -E "2181|9092"
 
-
-Expected output:
+Expected Output:
 
 *:2181  (java)
 *:9092  (java)
 
 Stop Services
+Bash
+
 bin/kafka-server-stop.sh
 bin/zookeeper-server-stop.sh
 
 3. Topic Management
 List All Topics
+Bash
+
 bin/kafka-topics.sh --bootstrap-server localhost:9092 --list
 
-Create a Topic
+Create a Topic (news_raw)
+Bash
+
 bin/kafka-topics.sh \
   --bootstrap-server localhost:9092 \
   --create \
@@ -48,31 +66,37 @@ bin/kafka-topics.sh \
   --partitions 1
 
 Describe a Topic
+Bash
+
 bin/kafka-topics.sh \
   --bootstrap-server localhost:9092 \
   --describe \
   --topic news_raw
 
 Delete a Topic
+Bash
+
 bin/kafka-topics.sh \
   --bootstrap-server localhost:9092 \
   --delete \
   --topic news_raw
-
-
-Recreate it if needed.
+# The topic must be recreated if needed after this operation.
 
 4. Consuming Data
+Consume Messages from the Beginning
 
-Consume messages from the beginning of the topic:
+The consumer will display all messages, including those published before it started.
+Bash
 
 bin/kafka-console-consumer.sh \
   --bootstrap-server localhost:9092 \
   --topic news_raw \
   --from-beginning
 
+Consume Only New Messages
 
-Consume only new messages:
+The consumer will only display messages published after it starts.
+Bash
 
 bin/kafka-console-consumer.sh \
   --bootstrap-server localhost:9092 \
@@ -80,29 +104,33 @@ bin/kafka-console-consumer.sh \
 
 5. Clearing a Topic
 
-Kafka does not support truncating a topic directly.
-The standard procedure is:
+Kafka does not support truncating a topic directly. The standard clearing procedure is:
 
-Delete the topic
+    Delete the topic.
 
-Recreate it
+    Recreate it immediately.
+
+Bash
 
 bin/kafka-topics.sh --bootstrap-server localhost:9092 --delete --topic news_raw
 bin/kafka-topics.sh --bootstrap-server localhost:9092 --create --topic news_raw --partitions 1 --replication-factor 1
 
 6. Debugging Kafka
+Verify Broker Registration in Zookeeper
 
-Verify that the broker is registered in Zookeeper:
+This command checks if the broker is known to Zookeeper.
+Bash
 
 bin/zookeeper-shell.sh localhost:2181 ls /brokers/ids
 
-
-Expected:
+Expected Output (Broker ID is 0):
 
 [0]
 
+Check Latest Offset
 
-Check latest offset:
+Displays the offset (position) of the last message in the topic.
+Bash
 
 bin/kafka-run-class.sh kafka.tools.GetOffsetShell \
   --broker-list localhost:9092 \
@@ -110,22 +138,30 @@ bin/kafka-run-class.sh kafka.tools.GetOffsetShell \
   --time -1
 
 7. Running Python Producers
-Activate Virtual Environment
+
+These steps should be executed on the Windows host system (or in the project path) to activate the virtual environment.
+Activate Virtual Environment (PowerShell)
+PowerShell
+
 cd "C:\Users\Gabriel\Documents\cours M2\Data_Stream\rag_markets"
 .\venv\Scripts\Activate.ps1
 
 Run Dummy Producer
+Bash
+
 python -m ingestion.ingest_dummy
 
 Run Finnhub Live News Ingestor
+Bash
+
 python -m ingestion.ingest_news_finhub
 
-
-Kafka consumer in WSL will show the resulting messages.
+    Note: Messages produced by these scripts will appear in the Kafka Console Consumer opened in WSL.
 
 8. Kafka Message Structure
 
-All messages pushed to news_raw follow this structure:
+All messages pushed to the news_raw topic follow this JSON structure:
+JSON
 
 {
   "id": "unique-id",
@@ -140,14 +176,13 @@ All messages pushed to news_raw follow this structure:
 
 9. Full Reset (If Kafka Becomes Corrupted)
 
-If Kafka or Zookeeper becomes inconsistent:
+If Kafka or Zookeeper become inconsistent, delete their temporary data logs and restart the services.
+Bash
 
 rm -rf /tmp/kafka-logs
 rm -rf /tmp/zookeeper
 
-
-Then restart Zookeeper and Kafka.
-
+Then, restart Zookeeper and Kafka (see Section 2).
 10. Quick Reference Summary
 Action	Command
 Start Zookeeper	bin/zookeeper-server-start.sh -daemon config/zookeeper.properties
