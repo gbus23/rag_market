@@ -36,3 +36,7 @@
    bin/zookeeper-shell.sh localhost:2181 get /brokers/ids/0
    bin/kafka-topics.sh --bootstrap-server <YOUR_WSL_IP>:9092 --list
    ```
+
+   5. receive: bin/kafka-console-consumer.sh --bootstrap-server localhost:9092 --topic news_raw --from-beginning
+
+
