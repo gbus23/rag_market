@@ -1,0 +1,2011 @@
+alias,ticker
+# ------------------------------------------------------------------------------------
+# Secteur Technologie & Communication
+# ------------------------------------------------------------------------------------
+
+# ==== Apple Inc. (AAPL) ====
+apple,AAPL
+apple inc,AAPL
+apple computers,AAPL
+aapl,AAPL
+aapl stock,AAPL
+iphone,AAPL
+iphones,AAPL
+ipad,AAPL
+ipads,AAPL
+macbook,AAPL
+macbooks,AAPL
+macbook pro,AAPL
+macbook air,AAPL
+imac,AAPL
+mac mini,AAPL
+apple watch,AAPL
+apple tv,AAPL
+apple tv+,AAPL
+app store,AAPL
+apple music,AAPL
+icloud,AAPL
+airpods,AAPL
+vision pro,AAPL
+apple pay,AAPL
+apple car,AAPL
+airtag,AAPL
+airtags,AAPL
+airpods pro,AAPL
+mac os,AAPL
+apple silicon,AAPL
+cupertino,AAPL
+tim cook,AAPL
+
+# ==== Microsoft (MSFT) ====
+microsoft,MSFT
+microsoft corp,MSFT
+msft,MSFT
+msft stock,MSFT
+windows,MSFT
+windows 10,MSFT
+windows 11,MSFT
+office,MSFT
+microsoft office,MSFT
+office 365,MSFT
+microsoft 365,MSFT
+azure,MSFT
+xbox,MSFT
+xbox game pass,MSFT
+game pass,MSFT
+linkedin,MSFT
+microsoft teams,MSFT
+teams,MSFT
+onedrive,MSFT
+github,MSFT
+hololens,MSFT
+surface pro,MSFT
+surface laptop,MSFT
+redmond,MSFT
+satya nadella,MSFT
+ms teams,MSFT
+skype,MSFT
+bing,MSFT
+edge browser,MSFT
+powerpoint,MSFT
+excel,MSFT
+word,MSFT
+azur,MSFT
+x box,MSFT
+
+google,GOOGL
+alphabet,GOOGL
+alphabet inc,GOOGL
+googl,GOOGL
+googl stock,GOOGL
+alphabet inc (class a),GOOGL
+goog,GOOG
+goog stock,GOOG
+alphabet inc (class c),GOOG
+youtube,GOOGL
+youtube shorts,GOOGL
+youtube music,GOOGL
+youtube tv,GOOGL
+gmail,GOOGL
+google maps,GOOGL
+google cloud,GOOGL
+gcp,GOOGL
+google drive,GOOGL
+google docs,GOOGL
+google photos,GOOGL
+android,GOOGL
+chrome,GOOGL
+chromecast,GOOGL
+pixel phone,GOOGL
+pixel 8,GOOGL
+waymo,GOOGL
+deepmind,GOOGL
+doubleclick,GOOGL
+adsense,GOOGL
+google ads,GOOGL
+play store,GOOGL
+google search,GOOGL
+google assistant,GOOGL
+nest,GOOGL
+fitbit,GOOGL
+sundar pichai,GOOGL
+google pixel,GOOGL
+google fiber,GOOGL
+gsuite,GOOGL
+
+# ==== Meta Platforms (META) ====
+meta,META
+meta platforms,META
+meta platforms inc,META
+meta stock,META
+facebook,META
+fb,META
+facebook app,META
+instagram,META
+reels,META
+instagram reels,META
+whatsapp,META
+messenger,META
+oculus,META
+quest headset,META
+meta quest,META
+horizon worlds,META
+threads app,META
+threads,META
+mark zuckerberg,META
+oculus quest,META
+facebook messenger,META
+fb live,META
+stories,META
+
+# ==== Amazon (AMZN) ====
+amazon,AMZN
+amazon.com,AMZN
+amzn,AMZN
+amzn stock,AMZN
+prime video,AMZN
+amazon prime,AMZN
+prime day,AMZN
+aws,AMZN
+amazon web services,AMZN
+kindle,AMZN
+audible,AMZN
+twitch,AMZN
+whole foods,AMZN
+amazon fresh,AMZN
+amazon music,AMZN
+fire tv,AMZN
+echo dot,AMZN
+alexa,AMZN
+prime air,AMZN
+bezos,AMZN
+jeff bezos,AMZN
+alexa echo,AMZN
+amazon logistics,AMZN
+ring doorbell,AMZN
+prime now,AMZN
+zappos,AMZN
+
+# ==== NVIDIA (NVDA) ====
+nvidia,NVDA
+nvda,NVDA
+nvda stock,NVDA
+geforce,NVDA
+rtx gpu,NVDA
+rtx 4090,NVDA
+rtx 4080,NVDA
+gtx gpu,NVDA
+cuda,NVDA
+tensor core,NVDA
+h100,NVDA
+a100,NVDA
+blackwell,NVDA
+dgx system,NVDA
+nvidia chips,NVDA
+jensen huang,NVDA
+geforce rtx,NVDA
+gpu,NVDA
+nvidia ai,NVDA
+dlss,NVDA
+
+# ==== Tesla, Inc. (TSLA) ====
+tesla,TSLA
+tesla inc,TSLA
+tsla,TSLA
+tsla stock,TSLA
+model 3,TSLA
+model y,TSLA
+model s,TSLA
+model x,TSLA
+cybertruck,TSLA
+roadster,TSLA
+gigafactory,TSLA
+megapack,TSLA
+powerwall,TSLA
+full self driving,TSLA
+fsd beta,TSLA
+autopilot,TSLA
+elon musk,TSLA
+starship,TSLA
+spacex,TSLA
+musk,TSLA
+autopilote,TSLA
+
+# ==== Netflix (NFLX) ====
+netflix,NFLX
+nflx,NFLX
+nflx stock,NFLX
+netflix series,NFLX
+netflix filme,NFLX
+netflix show,NFLX
+stream on netflix,NFLX
+streamer,NFLX
+binger,NFLX
+le netflix,NFLX
+streaming netflix,NFLX
+
+# ==== Adobe Inc. (ADBE) ====
+adobe,ADBE
+adobe inc,ADBE
+adbe,ADBE
+photoshop,ADBE
+illustrator,ADBE
+premiere pro,ADBE
+creative cloud,ADBE
+acrobat,ADBE
+pdf,ADBE
+
+# ==== Advanced Micro Devices (AMD) ====
+amd,AMD
+advanced micro devices,AMD
+amd chips,AMD
+ryzen,AMD
+radeon,AMD
+lisa su,AMD
+epyc,AMD
+
+# ==== Applied Materials (AMAT) ====
+applied materials,AMAT
+amat,AMAT
+semiconductor equipment,AMAT
+
+# ==== Broadcom (AVGO) ====
+broadcom,AVGO
+avgo,AVGO
+vmware,AVGO
+
+# ==== Cisco (CSCO) ====
+cisco,CSCO
+csco,CSCO
+cisco systems,CSCO
+
+# ==== Salesforce (CRM) ====
+salesforce,CRM
+salesforce.com,CRM
+crm,CRM
+slack,CRM
+tableau,CRM
+
+# ==== CrowdStrike (CRWD) ====
+crowdstrike,CRWD
+crwd,CRWD
+falcon platform,CRWD
+cybersecurity,CRWD
+
+# ==== Datadog (DDOG) ====
+datadog,DDOG
+ddog,DDOG
+monitoring software,DDOG
+
+# ==== Dell Technologies (DELL) ====
+dell,DELL
+dell technologies,DELL
+alienware,DELL
+
+# ==== Electronic Arts (EA) ====
+electronic arts,EA
+ ea ,EA
+ea sports,EA
+fifa game,EA
+
+# ==== Enphase Energy (ENPH) ====
+enphase energy,ENPH
+enph,ENPH
+solar inverter,ENPH
+
+# ==== F5, Inc. (FFIV) ====
+f5,FFIV
+f5 inc,FFIV
+big-ip,FFIV
+
+# ==== Fortinet (FTNT) ====
+fortinet,FTNT
+ftnt,FTNT
+fortiguard,FTNT
+
+# ==== GoDaddy (GDDY) ====
+godaddy,GDDY
+domain registrar,GDDY
+
+# ==== IBM (IBM) ====
+ibm,IBM
+international business machines,IBM
+ibm corp,IBM
+red hat,IBM
+watson ai,IBM
+
+# ==== Intel (INTC) ====
+intel,INTC
+intel corporation,INTC
+intc,INTC
+intel chips,INTC
+xeon,INTC
+core i9,INTC
+
+# ==== Intuit (INTU) ====
+intuit,INTU
+turbotax,INTU
+quickbooks,INTU
+credit karma,INTU
+
+# ==== Intuitive Surgical (ISRG) ====
+intuitive surgical,ISRG
+isrg,ISRG
+davinci surgery,ISRG
+
+# ==== KLA Corporation (KLAC) ====
+kla corporation,KLAC
+klac,KLAC
+wafer inspection,KLAC
+
+# ==== Lam Research (LRCX) ====
+lam research,LRCX
+lrcx,LRCX
+semiconductor fabrication,LRCX
+
+# ==== Micron Technology (MU) ====
+micron technology,MU
+mu,MU
+dram,MU
+nand,MU
+
+# ==== NetApp (NTAP) ====
+netapp,NTAP
+data storage,NTAP
+
+# ==== NXP Semiconductors (NXPI) ====
+nxp semiconductors,NXPI
+nxpi,NXPI
+nxp chips,NXPI
+
+# ==== Oracle Corporation (ORCL) ====
+oracle,ORCL
+oracle corporation,ORCL
+orcl,ORCL
+larry ellison,ORCL
+oracle cloud,ORCL
+
+# ==== Palo Alto Networks (PANW) ====
+palo alto networks,PANW
+panw,PANW
+next-gen firewall,PANW
+
+# ==== Paycom (PAYC) ====
+paycom,PAYC
+human capital management,PAYC
+
+# ==== PayPal (PYPL) ====
+paypal,PYPL
+paypal holdings,PYPL
+pypl,PYPL
+venmo,PYPL
+xoom,PYPL
+paie pal,PYPL
+
+# ==== PTC Inc. (PTC) ====
+ptc inc,PTC
+windchill,PTC
+thingworx,PTC
+
+# ==== Qualcomm (QCOM) ====
+qualcomm,QCOM
+qcom,QCOM
+snapdragon,QCOM
+qualcomm chips,QCOM
+
+# ==== Skyworks Solutions (SWKS) ====
+skyworks solutions,SWKS
+swks,SWKS
+rf chips,SWKS
+
+# ==== Synopsys (SNPS) ====
+synopsys,SNPS
+snps,SNPS
+eda software,SNPS
+
+# ==== T-Mobile US (TMUS) ====
+t-mobile us,TMUS
+tmobile,TMUS
+magenta,TMUS
+
+# ==== Take-Two Interactive (TTWO) ====
+take-two interactive,TTWO
+gta,TTWO
+grand theft auto,TTWO
+2k games,TTWO
+
+# ==== The Trade Desk (TTD) ====
+trade desk,TTD
+the trade desk,TTD
+programmatic advertising,TTD
+
+# ==== Tyler Technologies (TYL) ====
+tyler technologies,TYL
+tyl,TYL
+govtech,TYL
+
+# ==== Verisign (VRSN) ====
+verisign,VRSN
+vrsn,VRSN
+.com registrar,VRSN
+
+# ==== Verizon (VZ) ====
+verizon,VZ
+vz,VZ
+verizon wireless,VZ
+fios,VZ
+
+# ==== Workday, Inc. (WDAY) ====
+workday,WDAY
+wday,WDAY
+hcm software,WDAY
+
+# ------------------------------------------------------------------------------------
+# Secteur Consommation Discrétionnaire
+# ------------------------------------------------------------------------------------
+
+# ==== Walt Disney Company (The) (DIS) ====
+disney,DIS
+walt disney,DIS
+dis,DIS
+disney stock,DIS
+disney+,DIS
+disney plus,DIS
+disney plus hotstar,DIS
+hulu,DIS
+espn,DIS
+espn+,DIS
+pixar,DIS
+marvel,DIS
+star wars,DIS
+lucasfilm,DIS
+disney parks,DIS
+disneyland,DIS
+walt disney company,DIS
+disneyland paris,DIS
+magic kingdom,DIS
+mickey mouse,DIS
+the mouse,DIS
+boba fett,DIS
+frozen,DIS
+avatar movie,DIS
+disneyworld,DIS
+
+# ==== Tesla, Inc. (TSLA) - Répété pour complétude (voir Tech)
+
+# ==== Booking Holdings (BKNG) ====
+booking holdings,BKNG
+booking.com,BKNG
+kayak,BKNG
+priceline,BKNG
+
+# ==== CarMax (KMX) ====
+carmax,KMX
+used cars,KMX
+
+# ==== Carnival (CCL) ====
+carnival,CCL
+carnival cruise line,CCL
+ccl cruises,CCL
+
+# ==== Chipotle Mexican Grill (CMG) ====
+chipotle,CMG
+cmg,CMG
+burrito,CMG
+
+# ==== Deckers Brands (DECK) ====
+deckers brands,DECK
+ugg,DECK
+hoka,DECK
+
+# ==== Delta Air Lines (DAL) ====
+delta air lines,DAL
+delta,DAL
+dal,DAL
+delta airlines,DAL
+
+# ==== Domino's (DPZ) ====
+domino's,DPZ
+dominos,DPZ
+domino's pizza,DPZ
+
+# ==== DoorDash (DASH) ====
+doordash,DASH
+dash,DASH
+food delivery,DASH
+
+# ==== Expedia Group (EXPE) ====
+expedia group,EXPE
+expedia,EXPE
+vrbo,EXPE
+hotels.com,EXPE
+
+# ==== General Motors (GM) ====
+general motors,GM
+gm,GM
+gm motors,GM
+chevrolet,GM
+chevy,GM
+cadillac,GM
+gmc,GM
+buick,GM
+gmc truck,GM
+
+# ==== Hilton Worldwide (HLT) ====
+hilton worldwide,HLT
+hilton,HLT
+waldorf astoria,HLT
+
+# ==== Lowe's (LOW) ====
+lowe's,LOW
+lowes,LOW
+home improvement,LOW
+
+# ==== Lululemon Athletica (LULU) ====
+lululemon,LULU
+lulu,LULU
+lulu lemon,LULU
+lulu stock,LULU
+athleisure,LULU
+
+# ==== Marriott International (MAR) ====
+marriott international,MAR
+marriott,MAR
+ritz-carlton,MAR
+
+# ==== MGM Resorts (MGM) ====
+mgm resorts,MGM
+mgm grand,MGM
+bellagio,MGM
+
+# ==== Nike, Inc. (NKE) ====
+nike,NKE
+nike inc,NKE
+nke,NKE
+air jordan,NKE
+jordan brand,NKE
+air max,NKE
+nike shoes,NKE
+nike sneakers,NKE
+nike sportswear,NKE
+swoosh,NKE
+nike swoosh,NKE
+nike apparel,NKE
+nike running,NKE
+air force 1,NKE
+nike football,NKE
+
+# ==== NVR, Inc. (NVR) ====
+nvr,NVR
+nvr inc,NVR
+ryan homes,NVR
+nv homes,NVR
+
+# ==== O’Reilly Automotive (ORLY) ====
+o’reilly automotive,ORLY
+o'reilly,ORLY
+auto parts,ORLY
+
+# ==== PulteGroup (PHM) ====
+pultegroup,PHM
+pulte homes,PHM
+del webb,PHM
+
+# ==== Ross Stores (ROST) ====
+ross stores,ROST
+ross dress for less,ROST
+
+# ==== Royal Caribbean Group (RCL) ====
+royal caribbean group,RCL
+royal caribbean,RCL
+celebrity cruises,RCL
+
+# ==== Target Corporation (TGT) ====
+target,TGT
+target stores,TGT
+target.com,TGT
+tgt,TGT
+bullseye dog,TGT
+
+# ==== TJX Companies (TJX) ====
+tjx companies,TJX
+tj maxx,TJX
+marshalls,TJX
+homegoods,TJX
+
+# ==== Tapestry, Inc. (TPR) ====
+tapestry,TPR
+coach brand,TPR
+kate spade,TPR
+
+# ==== Uber (UBER) ====
+uber,UBER
+uber technologies,UBER
+uber eats,UBER
+uber ride,UBER
+
+# ==== Ulta Beauty (ULTA) ====
+ulta beauty,ULTA
+ulta,ULTA
+beauty products,ULTA
+
+# ==== United Airlines Holdings (UAL) ====
+united airlines holdings,UAL
+united airlines,UAL
+ual,UAL
+
+# ==== Wynn Resorts (WYNN) ====
+wynn resorts,WYNN
+wynn las vegas,WYNN
+
+# ==== Yum! Brands (YUM) ====
+yum! brands,YUM
+yum brands,YUM
+kfc,YUM
+pizza hut,YUM
+taco bell,YUM
+
+# ------------------------------------------------------------------------------------
+# Secteur Consommation de Base
+# ------------------------------------------------------------------------------------
+
+# ==== Walmart (WMT) ====
+walmart,WMT
+walmart stores,WMT
+walmart.com,WMT
+wmt,WMT
+wally world,WMT
+walmart supercenter,WMT
+sam's club,WMT
+
+# ==== Costco (COST) ====
+costco,COST
+costco wholesale,COST
+kirkland signature,COST
+
+# ==== McDonald's (MCD) ====
+mcdonalds,MCD
+mcdonald's,MCD
+mcdo,MCD
+mcd,MCD
+big mac,MCD
+mccafe,MCD
+mcdonalds restaurant,MCD
+mcflurry,MCD
+happy meal,MCD
+
+# ==== Starbucks (SBUX) ====
+starbucks,SBUX
+starbucks coffee,SBUX
+starbucks stores,SBUX
+sbux,SBUX
+latte,SBUX
+frappuccino,SBUX
+
+# ==== Coca-Cola Company (The) (KO) ====
+coca cola,KO
+coca-cola,KO
+coke,KO
+ko,KO
+coke zero,KO
+sprite,KO
+fanta,KO
+coca cola company,KO
+coca,KO
+diet coke,KO
+
+# ==== PepsiCo (PEP) ====
+pepsi,PEP
+pepsi cola,PEP
+pepsi max,PEP
+pep,PEP
+mountain dew,PEP
+lay's,PEP
+lays,PEP
+doritos,PEP
+pepsico,PEP
+pepsi company,PEP
+gatorade,PEP
+frito lay,PEP
+
+# ==== 3M (MMM) ====
+3m,MMM
+mmm,MMM
+scotch tape,MMM
+post-it,MMM
+ppe,MMM
+
+# ==== Altria (MO) ====
+altria,MO
+mo,MO
+marlboro,MO
+
+# ==== Amcor (AMCR) ====
+amcor,AMCR
+amcr,AMCR
+packaging,AMCR
+
+# ==== Archer Daniels Midland (ADM) ====
+archer daniels midland,ADM
+adm,ADM
+agribusiness,ADM
+
+# ==== Campbell's Company (The) (CPB) ====
+campbell's company,CPB
+campbell soup,CPB
+cpb,CPB
+
+# ==== Clorox (CLX) ====
+clorox,CLX
+bleach,CLX
+pine-sol,CLX
+
+# ==== Colgate-Palmolive (CL) ====
+colgate-palmolive,CL
+colgate,CL
+palmolive,CL
+
+# ==== Conagra Brands (CAG) ====
+conagra brands,CAG
+conagra,CAG
+slim jim,CAG
+
+# ==== Corning Inc. (GLW) ====
+corning inc,GLW
+corning,GLW
+gorilla glass,GLW
+
+# ==== Estée Lauder Companies (The) (EL) ====
+estée lauder,EL
+el,EL
+mac cosmetics,EL
+
+# ==== General Mills (GIS) ====
+general mills,GIS
+gis,GIS
+cheerios,GIS
+betty crocker,GIS
+
+# ==== Hershey Company (The) (HSY) ====
+hershey company,HSY
+hershey,HSY
+hsy,HSY
+kit kat,HSY
+reese's,HSY
+
+# ==== Hormel Foods (HRL) ====
+hormel foods,HRL
+spam,HRL
+skippy,HRL
+
+# ==== J.M. Smucker Company (The) (SJM) ====
+j.m. smucker,SJM
+smucker's,SJM
+folgers,SJM
+
+# ==== Kellanova (K) ====
+kellanova,K
+kellogg's,K
+kashi,K
+pringles,K
+
+# ==== Keurig Dr Pepper (KDP) ====
+keurig dr pepper,KDP
+kdp,KDP
+dr pepper,KDP
+green mountain,KDP
+
+# ==== Kimberly-Clark (KMB) ====
+kimberly-clark,KMB
+kmb,KMB
+kleenex,KMB
+huggies,KMB
+
+# ==== Kraft Heinz (KHC) ====
+kraft heinz,KHC
+khc,KHC
+kraft,KHC
+heinz,KHC
+
+# ==== McCormick & Company (MKC) ====
+mccormick & company,MKC
+mccormick spices,MKC
+
+# ==== Mondelez International (MDLZ) ====
+mondelez international,MDLZ
+mdlz,MDLZ
+oreo,MDLZ
+cadbury,MDLZ
+
+# ==== Monster Beverage (MNST) ====
+monster beverage,MNST
+monster energy,MNST
+
+# ==== Procter & Gamble (PG) ====
+procter & gamble,PG
+pg,PG
+pampers,PG
+tide detergent,PG
+gillette,PG
+
+# ==== The Cooper Companies (COO) ====
+cooper companies,COO
+coo,COO
+cooper vision,COO
+
+# ==== Tyson Foods (TSN) ====
+tyson foods,TSN
+tsn,TSN
+tyson chicken,TSN
+
+# ==== Williams-Sonoma, Inc. (WSM) ====
+williams-sonoma,WSM
+williams sonoma,WSM
+pottery barn,WSM
+
+# ------------------------------------------------------------------------------------
+# Secteur Financier
+# ------------------------------------------------------------------------------------
+
+# ==== Visa Inc. (V) ====
+visa,V
+visa card,V
+visa cards,V
+visa inc,V
+carte visa,V
+
+# ==== Mastercard (MA) ====
+mastercard,MA
+master card,MA
+ma,MA
+master card inc,MA
+carte mastercard,MA
+
+# ==== JPMorgan Chase (JPM) ====
+jpmorgan,JPM
+jp morgan,JPM
+chase bank,JPM
+jpm,JPM
+jp morgan chase,JPM
+chase,JPM
+
+# ==== Bank of America (BAC) ====
+bank of america,BAC
+boa,BAC
+bac,BAC
+bofa,BAC
+bankamerica,BAC
+
+# ==== Goldman Sachs (GS) ====
+goldman sachs,GS
+goldman,GS
+gs,GS
+goldman sachs group,GS
+the goldman,GS
+
+# ==== Morgan Stanley (MS) ====
+morgan stanley,MS
+ms,MS
+morgan stanley corp,MS
+stanley,MS
+
+# ==== Aflac (AFL) ====
+aflac,AFL
+aflac insurance,AFL
+duck,AFL
+
+# ==== American Express (AXP) ====
+american express,AXP
+amex,AXP
+axp,AXP
+
+# ==== American International Group (AIG) ====
+american international group,AIG
+aig,AIG
+
+# ==== Ameriprise Financial (AMP) ====
+ameriprise financial,AMP
+ameriprise,AMP
+
+# ==== Aon plc (AON) ====
+aon plc,AON
+aon,AON
+
+# ==== Arch Capital Group (ACGL) ====
+arch capital group,ACGL
+arch capital,ACGL
+
+# ==== Assurant (AIZ) ====
+assurant,AIZ
+aiz,AIZ
+
+# ==== BNY Mellon (BK) ====
+bny mellon,BK
+bank of new york mellon,BK
+bk,BK
+
+# ==== Brown & Brown (BRO) ====
+brown & brown,BRO
+bro,BRO
+insurance broker,BRO
+
+# ==== Capital One (COF) ====
+capital one,COF
+cof,COF
+
+# ==== Charles Schwab Corporation (SCHW) ====
+charles schwab,SCHW
+schwab,SCHW
+
+# ==== Chubb Limited (CB) ====
+chubb limited,CB
+chubb,CB
+
+# ==== Cincinnati Financial (CINF) ====
+cincinnati financial,CINF
+cinf,CINF
+
+# ==== Citizens Financial Group (CFG) ====
+citizens financial group,CFG
+citizens bank,CFG
+
+# ==== CME Group (CME) ====
+cme group,CME
+cme,CME
+chicago mercantile exchange,CME
+
+# ==== Fair Isaac (FICO) ====
+fair isaac,FICO
+fico,FICO
+fico score,FICO
+
+# ==== Fifth Third Bancorp (FITB) ====
+fifth third bancorp,FITB
+fifth third bank,FITB
+
+# ==== Fiserv (FI) ====
+fiserv,FI
+payments tech,FI
+
+# ==== Franklin Resources (BEN) ====
+franklin resources,BEN
+franklin templeton,BEN
+
+# ==== Globe Life (GL) ====
+globe life,GL
+insurance,GL
+
+# ==== Hartford (The) (HIG) ====
+hartford,HIG
+the hartford,HIG
+
+# ==== Huntington Bancshares (HBAN) ====
+huntington bancshares,HBAN
+huntington bank,HBAN
+
+# ==== Interactive Brokers (IBKR) ====
+interactive brokers,IBKR
+ibkr,IBKR
+
+# ==== Invesco (IVZ) ====
+invesco,IVZ
+ivz,IVZ
+
+# ==== KeyCorp (KEY) ====
+keycorp,KEY
+keybank,KEY
+
+# ==== KKR & Co. (KKR) ====
+kkr & co,KKR
+kkr,KKR
+
+# ==== M&T Bank (MTB) ====
+m&t bank,MTB
+mtb,MTB
+
+# ==== MarketAxess (MKTX) ====
+marketaxess,MKTX
+mktx,MKTX
+
+# ==== Marsh McLennan (MMC) ====
+marsh mclennan,MMC
+marsh,MMC
+guy carpenter,MMC
+
+# ==== MetLife (MET) ====
+metlife,MET
+met,MET
+
+# ==== Moody's Corporation (MCO) ====
+moody's corporation,MCO
+moodys,MCO
+
+# ==== MSCI Inc. (MSCI) ====
+msci inc,MSCI
+msci index,MSCI
+
+# ==== Nasdaq, Inc. (NDAQ) ====
+nasdaq,NDAQ
+ndaQ,NDAQ
+
+# ==== Northern Trust (NTRS) ====
+northern trust,NTRS
+ntrs,NTRS
+
+# ==== PNC Financial Services (PNC) ====
+pnc financial services,PNC
+pnc bank,PNC
+
+# ==== Principal Financial Group (PFG) ====
+principal financial group,PFG
+pfg,PFG
+
+# ==== Progressive Corporation (PGR) ====
+progressive corporation,PGR
+progressive insurance,PGR
+
+# ==== Prudential Financial (PRU) ====
+prudential financial,PRU
+pru,PRU
+
+# ==== Raymond James Financial (RJF) ====
+raymond james financial,RJF
+raymond james,RJF
+
+# ==== Regions Financial Corporation (RF) ====
+regions financial corporation,RF
+regions bank,RF
+
+# ==== S&P Global (SPGI) ====
+s&p global,SPGI
+spgi,SPGI
+sp ratings,SPGI
+
+# ==== State Street Corporation (STT) ====
+state street corporation,STT
+state street,STT
+
+# ==== Synchrony Financial (SYF) ====
+synchrony financial,SYF
+syf,SYF
+
+# ==== T. Rowe Price (TROW) ====
+t. rowe price,TROW
+trowe price,TROW
+
+# ==== Travelers Companies (The) (TRV) ====
+travelers companies,TRV
+travelers,TRV
+
+# ==== Truist Financial (TFC) ====
+truist financial,TFC
+truist bank,TFC
+
+# ==== U.S. Bancorp (USB) ====
+u.s. bancorp,USB
+us bank,USB
+
+# ==== Wells Fargo (WFC) ====
+wells fargo,WFC
+wfc,WFC
+
+# ==== W. R. Berkley Corporation (WRB) ====
+w. r. berkley,WRB
+wr berkley,WRB
+
+# ==== Willis Towers Watson (WTW) ====
+willis towers watson,WTW
+wtw,WTW
+
+# ------------------------------------------------------------------------------------
+# Secteur Santé et Pharma
+# ------------------------------------------------------------------------------------
+
+# ==== Johnson & Johnson (JNJ) ====
+johnson & johnson,JNJ
+jnj,JNJ
+jnj vaccine,JNJ
+johnson and johnson,JNJ
+band aid,JNJ
+tylenol,JNJ
+kenvue,KVUE
+
+# ==== Pfizer (PFE) ====
+pfizer,PFE
+pfe,PFE
+pfizer vaccine,PFE
+comirnaty,PFE
+pifzer,PFE
+pfizer inc,PFE
+viagra,PFE
+
+# ==== Merck & Co. (MRK) ====
+merck,MRK
+mrk,MRK
+keytruda,MRK
+mrk pharma,MRK
+merck & co,MRK
+
+# ==== Eli Lilly (LLY) ====
+eli lilly,LLY
+lilly,LLY
+lly,LLY
+mounjaro,LLY
+zypbound,LLY
+lilly & co,LLY
+lilly pharma,LLY
+ozempic,LLY
+
+# ==== UnitedHealth Group (UNH) ====
+unitedhealth,UNH
+unitedhealth group,UNH
+optum,UNH
+unh,UNH
+united health,UNH
+united healthcare,UNH
+
+# ==== Abbott Laboratories (ABT) ====
+abbott laboratories,ABT
+abbott labs,ABT
+abt,ABT
+freestyle libre,ABT
+
+# ==== AbbVie (ABBV) ====
+abbvie,ABBV
+abbv,ABBV
+humira,ABBV
+
+# ==== Agilent Technologies (A) ====
+agilent technologies,A
+agilent,A
+
+# ==== Align Technology (ALGN) ====
+align technology,ALGN
+algn,ALGN
+invisalign,ALGN
+
+# ==== Amgen (AMGN) ====
+amgen,AMGN
+amgn,AMGN
+biotech,AMGN
+
+# ==== Baxter International (BAX) ====
+baxter international,BAX
+bax,BAX
+
+# ==== Becton Dickinson (BDX) ====
+becton dickinson,BDX
+bdx,BDX
+
+# ==== Bio-Techne (TECH) ====
+bio-techne,TECH
+biotechne,TECH
+
+# ==== Biogen (BIIB) ====
+biogen,BIIB
+biib,BIIB
+
+# ==== Bristol Myers Squibb (BMY) ====
+bristol myers squibb,BMY
+bmy,BMY
+
+# ==== Cardinal Health (CAH) ====
+cardinal health,CAH
+cah,CAH
+
+# ==== Cencora (COR) ====
+cencora,COR
+amerisourcebergen,COR
+
+# ==== Centene Corporation (CNC) ====
+centene corporation,CNC
+centene,CNC
+
+# ==== Charles River Laboratories (CRL) ====
+charles river laboratories,CRL
+crl,CRL
+
+# ==== Cigna (CI) ====
+cigna,CI
+ci,CI
+evernorth,CI
+
+# ==== Cooper Companies (The) (COO) - Répété pour complétude (voir Consommation de Base)
+
+# ==== Danaher Corporation (DHR) ====
+danaher corporation,DHR
+dhr,DHR
+
+# ==== DaVita (DVA) ====
+davita,DVA
+dva,DVA
+dialysis,DVA
+
+# ==== Dexcom (DXCM) ====
+dexcom,DXCM
+dxcm,DXCM
+cgm,DXCM
+
+# ==== Edwards Lifesciences (EW) ====
+edwards lifesciences,EW
+ew,EW
+
+# ==== Elevance Health (ELV) ====
+elevance health,ELV
+anthem,ELV
+
+# ==== Gilead Sciences (GILD) ====
+gilead sciences,GILD
+gilead,GILD
+gild,GILD
+
+# ==== HCA Healthcare (HCA) ====
+hca healthcare,HCA
+hca,HCA
+
+# ==== Healthpeak Properties (DOC) ====
+healthpeak properties,DOC
+doc,DOC
+
+# ==== Henry Schein (HSIC) ====
+henry schein,HSIC
+hsic,HSIC
+
+# ==== Hologic (HOLX) ====
+hologic,HOLX
+holx,HOLX
+
+# ==== Humana (HUM) ====
+humana,HUM
+hum,HUM
+
+# ==== Idexx Laboratories (IDXX) ====
+idexx laboratories,IDXX
+idexx,IDXX
+animal health,IDXX
+
+# ==== Incyte (INCY) ====
+incyte,INCY
+incy,INCY
+
+# ==== Insulet Corporation (PODD) ====
+insulet corporation,PODD
+omnipod,PODD
+
+# ==== IQVIA (IQV) ====
+iqvia,IQV
+cro,IQV
+
+# ==== Labcorp (LH) ====
+labcorp,LH
+laboratory corporation of america,LH
+
+# ==== McKesson Corporation (MCK) ====
+mckesson corporation,MCK
+mckesson,MCK
+mck,MCK
+
+# ==== Medtronic (MDT) ====
+medtronic,MDT
+mdt,MDT
+
+# ==== Molina Healthcare (MOH) ====
+molina healthcare,MOH
+moh,MOH
+
+# ==== Moderna (MRNA) ====
+moderna,MRNA
+mrna,MRNA
+moderna vaccine,MRNA
+
+# ==== Quest Diagnostics (DGX) ====
+quest diagnostics,DGX
+quest lab,DGX
+
+# ==== Regeneron Pharmaceuticals (REGN) ====
+regeneron,REGN
+regn,REGN
+
+# ==== ResMed (RMD) ====
+resmed,RMD
+rmd,RMD
+cpap,RMD
+
+# ==== Revvity (RVTY) ====
+revvity,RVTY
+perkinelmer,RVTY
+
+# ==== Steris (STE) ====
+steris,STE
+ste,STE
+
+# ==== Stryker Corporation (SYK) ====
+stryker corporation,SYK
+stryker,SYK
+
+# ==== Thermo Fisher Scientific (TMO) ====
+thermo fisher scientific,TMO
+thermo fisher,TMO
+tmo,TMO
+
+# ==== Universal Health Services (UHS) ====
+universal health services,UHS
+uhs,UHS
+
+# ==== Ventas (VTR) ====
+ventas,VTR
+vtr,VTR
+
+# ==== Veralto (VLTO) ====
+veralto,VLTO
+vlt,VLTO
+
+# ==== Vertex Pharmaceuticals (VRTX) ====
+vertex pharmaceuticals,VRTX
+vertex,VRTX
+vrtx,VRTX
+
+# ==== Viatris (VTRS) ====
+viatris,VTRS
+vtrs,VTRS
+mylan,VTRS
+
+# ==== Welltower (WELL) ====
+welltower,WELL
+well,WELL
+
+# ==== West Pharmaceutical Services (WST) ====
+west pharmaceutical services,WST
+wst,WST
+
+# ==== Zimmer Biomet (ZBH) ====
+zimmer biomet,ZBH
+zbh,ZBH
+
+# ==== Zoetis (ZTS) ====
+zoetis,ZTS
+zts,ZTS
+animal pharma,ZTS
+
+# ------------------------------------------------------------------------------------
+# Secteur Énergie
+# ------------------------------------------------------------------------------------
+
+# ==== ExxonMobil (XOM) ====
+exxon,XOM
+exxonmobil,XOM
+mobil oil,XOM
+xom,XOM
+exxon mobile,XOM
+exxon stock,XOM
+esso,XOM
+
+# ==== Chevron (CVX) ====
+chevron,CVX
+chevron corp,CVX
+cvx,CVX
+chevron corporation,CVX
+texaco,CVX
+
+# ==== APA Corporation (APA) ====
+apa corporation,APA
+apache corp,APA
+
+# ==== Baker Hughes (BKR) ====
+baker hughes,BKR
+bkr,BKR
+
+# ==== ConocoPhillips (COP) ====
+conocophillips,COP
+cop,COP
+
+# ==== Coterra (CTRA) ====
+coterra,CTRA
+ctra,CTRA
+
+# ==== Devon Energy (DVN) ====
+devon energy,DVN
+dvn,DVN
+
+# ==== Diamondback Energy (FANG) ====
+diamondback energy,FANG
+fang,FANG
+
+# ==== EOG Resources (EOG) ====
+eog resources,EOG
+eog,EOG
+
+# ==== EQT Corporation (EQT) ====
+eqt corporation,EQT
+eqt,EQT
+
+# ==== Halliburton (HAL) ====
+halliburton,HAL
+hal,HAL
+
+# ==== Kinder Morgan (KMI) ====
+kinder morgan,KMI
+kmi,KMI
+pipeline,KMI
+
+# ==== Marathon Petroleum (MPC) ====
+marathon petroleum,MPC
+mpc,MPC
+
+# ==== NextEra Energy (NEE) ====
+nextera energy,NEE
+nee,NEE
+fpl,NEE
+
+# ==== NRG Energy (NRG) ====
+nrg energy,NRG
+nrg,NRG
+
+# ==== Occidental Petroleum (OXY) ====
+occidental petroleum,OXY
+oxy,OXY
+
+# ==== Phillips 66 (PSX) ====
+phillips 66,PSX
+psx,PSX
+
+# ==== Schlumberger (SLB) ====
+schlumberger,SLB
+slb,SLB
+
+# ==== Sempra (SRE) ====
+sempra,SRE
+sre,SRE
+
+# ==== Targa Resources (TRGP) ====
+targa resources,TRGP
+trgp,TRGP
+
+# ==== Valero Energy (VLO) ====
+valero energy,VLO
+vlo,VLO
+
+# ==== Vistra Corp. (VST) ====
+vistra corp,VST
+vistra,VST
+
+# ==== Williams Companies (WMB) ====
+williams companies,WMB
+wmb,WMB
+
+# ------------------------------------------------------------------------------------
+# Secteur Industriel
+# ------------------------------------------------------------------------------------
+
+# ==== Ford Motor Company (F) ====
+ford,F
+ford motor,F
+f,F
+mustang,F
+f-150,F
+ford motors,F
+ford truck,F
+f150,F
+ford bronco,F
+ford focus,F
+
+# ==== General Motors (GM) - Répété pour complétude (voir Consommation Discrétionnaire)
+
+# ==== Boeing (BA) ====
+boeing,BA
+ba,BA
+boeing 737,BA
+boeing 787,BA
+boeing 777,BA
+boeing jets,BA
+boeing co,BA
+b737,BA
+b787,BA
+b777,BA
+dreamliner,BA
+
+# ==== Caterpillar (CAT) ====
+caterpillar,CAT
+caterpillar inc,CAT
+cat machinery,CAT
+cat equipment,CAT
+cat,CAT
+cat inc,CAT
+caterpillar machines,CAT
+cat construction,CAT
+
+# ==== A. O. Smith (AOS) ====
+a. o. smith,AOS
+ao smith,AOS
+water heater,AOS
+
+# ==== Air Products (APD) ====
+air products,APD
+apd,APD
+industrial gas,APD
+
+# ==== Allegion (ALLE) ====
+allegion,ALLE
+schlage,ALLE
+kwikset,ALLE
+
+# ==== Ametek (AME) ====
+ametek,AME
+ame,AME
+
+# ==== Amphenol (APH) ====
+amphenol,APH
+aph,APH
+
+# ==== Aptiv (APTV) ====
+aptiv,APTV
+aptiv plc,APTV
+
+# ==== Automatic Data Processing (ADP) ====
+automatic data processing,ADP
+adp,ADP
+
+# ==== Builders FirstSource (BLDR) ====
+builders firstsource,BLDR
+bldr,BLDR
+
+# ==== C.H. Robinson (CHRW) ====
+c.h. robinson,CHRW
+ch robinson,CHRW
+logistics,CHRW
+
+# ==== Carrier Global (CARR) ====
+carrier global,CARR
+carrier,CARR
+hvac,CARR
+
+# ==== Cummins (CMI) ====
+cummins,CMI
+cmi,CMI
+diesel engine,CMI
+
+# ==== Deere & Company (DE) ====
+deere & company,DE
+deere,DE
+john deere,DE
+
+# ==== Dover Corporation (DOV) ====
+dover corporation,DOV
+dov,DOV
+
+# ==== Eastman Chemical Company (EMN) ====
+eastman chemical company,EMN
+eastman,EMN
+
+# ==== Eaton Corporation (ETN) ====
+eaton corporation,ETN
+eaton,ETN
+
+# ==== Emerson Electric (EMR) ====
+emerson electric,EMR
+emr,EMR
+
+# ==== Expeditors International (EXPD) ====
+expeditors international,EXPD
+expeditors,EXPD
+
+# ==== Fastenal (FAST) ====
+fastenal,FAST
+fast,FAST
+
+# ==== Fortune Brands Innovations (FBIN) ====
+fortune brands,FBIN
+masterbrand,FBIN
+
+# ==== Generac (GNRC) ====
+generac,GNRC
+gnrc,GNRC
+generators,GNRC
+
+# ==== General Dynamics (GD) ====
+general dynamics,GD
+gd,GD
+
+# ==== Genuine Parts Company (GPC) ====
+genuine parts company,GPC
+gpc,GPC
+
+# ==== Howmet Aerospace (HWM) ====
+howmet aerospace,HWM
+hwm,HWM
+
+# ==== Hubbell Incorporated (HUBB) ====
+hubbell incorporated,HUBB
+hubbell,HUBB
+
+# ==== Huntington Ingalls Industries (HII) ====
+huntington ingalls industries,HII
+hii,HII
+
+# ==== IDEX Corporation (IEX) ====
+idex corporation,IEX
+iex,IEX
+
+# ==== Illinois Tool Works (ITW) ====
+illinois tool works,ITW
+itw,ITW
+
+# ==== Ingersoll Rand (IR) ====
+ingersoll rand,IR
+ir,IR
+
+# ==== J.B. Hunt (JBHT) ====
+j.b. hunt,JBHT
+jb hunt,JBHT
+trucking,JBHT
+
+# ==== Jabil (JBL) ====
+jabil,JBL
+jbl,JBL
+
+# ==== Jacobs Solutions (J) ====
+jacobs solutions,J
+jacobs engineering,J
+
+# ==== Johnson Controls (JCI) ====
+johnson controls,JCI
+jci,JCI
+
+# ==== L3Harris (LHX) ====
+l3harris,LHX
+lhx,LHX
+
+# ==== Lennox International (LII) ====
+lennox international,LII
+lennox,LII
+
+# ==== Lockheed Martin (LMT) ====
+lockheed martin,LMT
+lmt,LMT
+f-35,LMT
+
+# ==== Martin Marietta Materials (MLM) ====
+martin marietta materials,MLM
+mlm,MLM
+
+# ==== Masco (MAS) ====
+masco,MAS
+delta faucet,MAS
+
+# ==== Motorola Solutions (MSI) ====
+motorola solutions,MSI
+msi,MSI
+
+# ==== Norfolk Southern (NSC) ====
+norfolk southern,NSC
+nsc,NSC
+
+# ==== Northrop Grumman (NOC) ====
+northrop grumman,NOC
+noc,NOC
+
+# ==== Otis Worldwide (OTIS) ====
+otis worldwide,OTIS
+otis elevator,OTIS
+
+# ==== Paccar (PCAR) ====
+paccar,PCAR
+kenworth,PCAR
+peterbilt,PCAR
+
+# ==== Pentair (PNR) ====
+pentair,PNR
+pnr,PNR
+
+# ==== PPG Industries (PPG) ====
+ppg industries,PPG
+ppg paint,PPG
+
+# ==== Quanta Services (PWR) ====
+quanta services,PWR
+pwr,PWR
+
+# ==== Republic Services (RSG) ====
+republic services,RSG
+rsg,RSG
+waste disposal,RSG
+
+# ==== Rockwell Automation (ROK) ====
+rockwell automation,ROK
+rok,ROK
+
+# ==== Rollins, Inc. (ROL) ====
+rollins,ROL
+pest control,ROL
+
+# ==== Roper Technologies (ROP) ====
+roper technologies,ROP
+rop,ROP
+
+# ==== RTX Corporation (RTX) ====
+rtx corporation,RTX
+raytheon technologies,RTX
+raytheon,RTX
+
+# ==== Snap-on (SNA) ====
+snap-on,SNA
+snap on tools,SNA
+
+# ==== Stanley Black & Decker (SWK) ====
+stanley black & decker,SWK
+swk,SWK
+dewalt,SWK
+
+# ==== TE Connectivity (TEL) ====
+te connectivity,TEL
+tel,TEL
+
+# ==== Teledyne Technologies (TDY) ====
+teledyne technologies,TDY
+tdy,TDY
+
+# ==== Textron (TXT) ====
+textron,TXT
+cessna,TXT
+bell helicopter,TXT
+
+# ==== Trane Technologies (TT) ====
+trane technologies,TT
+trane,TT
+american standard,TT
+
+# ==== TransDigm Group (TDG) ====
+transdigm group,TDG
+tdg,TDG
+
+# ==== Trimble Inc. (TRMB) ====
+trimble inc,TRMB
+trimble,TRMB
+
+# ==== Union Pacific Corporation (UNP) ====
+union pacific corporation,UNP
+union pacific,UNP
+unp,UNP
+
+# ==== United Parcel Service (UPS) ====
+united parcel service,UPS
+ups,UPS
+package delivery,UPS
+
+# ==== United Rentals (URI) ====
+united rentals,URI
+uri,URI
+
+# ==== Vulcan Materials Company (VMC) ====
+vulcan materials company,VMC
+vulcan materials,VMC
+
+# ==== W. W. Grainger (GWW) ====
+w. w. grainger,GWW
+grainger,GWW
+
+# ==== Wabtec (WAB) ====
+wabtec,WAB
+wab,WAB
+
+# ==== Waste Management (WM) ====
+waste management,WM
+wm,WM
+garbage,WM
+
+# ==== Zebra Technologies (ZBRA) ====
+zebra technologies,ZBRA
+zbra,ZBRA
+
+# ------------------------------------------------------------------------------------
+# Secteur Immobilier (REITs)
+# ------------------------------------------------------------------------------------
+
+# ==== Alexandria Real Estate Equities (ARE) ====
+alexandria real estate equities,ARE
+alexandria real estate,ARE
+are,ARE
+life science reit,ARE
+
+# ==== AvalonBay Communities (AVB) ====
+avalonbay communities,AVB
+avb,AVB
+apartment reit,AVB
+
+# ==== BXP, Inc. (BXP) ====
+bxp,BXP
+boston properties,BXP
+
+# ==== Camden Property Trust (CPT) ====
+camden property trust,CPT
+cpt,CPT
+
+# ==== Crown Castle (CCI) ====
+crown castle,CCI
+cci,CCI
+cell towers,CCI
+
+# ==== Digital Realty (DLR) ====
+digital realty,DLR
+dlr,DLR
+data center reit,DLR
+
+# ==== Equity Residential (EQR) ====
+equity residential,EQR
+eqr,EQR
+
+# ==== Essex Property Trust (ESS) ====
+essex property trust,ESS
+ess,ESS
+
+# ==== Extra Space Storage (EXR) ====
+extra space storage,EXR
+exr,EXR
+
+# ==== Federal Realty Investment Trust (FRT) ====
+federal realty,FRT
+frt,FRT
+
+# ==== Host Hotels & Resorts (HST) ====
+host hotels & resorts,HST
+host hotels,HST
+hst,HST
+
+# ==== Invitation Homes (INVH) ====
+invitation homes,INVH
+invh,INVH
+single-family rental,INVH
+
+# ==== Iron Mountain (IRM) ====
+iron mountain,IRM
+irm,IRM
+data management,IRM
+
+# ==== Kimco Realty (KIM) ====
+kimco realty,KIM
+kim,KIM
+
+# ==== Mid-America Apartment Communities (MAA) ====
+mid-america apartment communities,MAA
+maa,MAA
+
+# ==== Prologis (PLD) ====
+prologis,PLD
+pld,PLD
+industrial reit,PLD
+
+# ==== Public Storage (PSA) ====
+public storage,PSA
+psa,PSA
+
+# ==== Realty Income (O) ====
+realty income,O
+monthly dividend company,O
+
+# ==== Regency Centers (REG) ====
+regency centers,REG
+reg,REG
+
+# ==== SBA Communications (SBAC) ====
+sba communications,SBAC
+sbac,SBAC
+
+# ==== Simon Property Group (SPG) ====
+simon property group,SPG
+spg,SPG
+mall reit,SPG
+
+# ==== UDR, Inc. (UDR) ====
+udr,UDR
+udr inc,UDR
+
+# ==== Vici Properties (VICI) ====
+vici properties,VICI
+vici,VICI
+casino reit,VICI
+
+# ------------------------------------------------------------------------------------
+# Secteur Matériaux et Autres
+# ------------------------------------------------------------------------------------
+
+# ==== Albemarle Corporation (ALB) ====
+albemarle corporation,ALB
+albemarle,ALB
+alb,ALB
+lithium,ALB
+
+# ==== Ball Corporation (BALL) ====
+ball corporation,BALL
+ball,BALL
+metal packaging,BALL
+
+# ==== Bunge Global (BG) ====
+bunge global,BG
+bunge,BG
+bg,BG
+
+# ==== Celanese Corporation (CE) ====
+celanese corporation,CE
+celanese,CE
+
+# ==== CF Industries (CF) ====
+cf industries,CF
+cf,CF
+fertilizer,CF
+
+# ==== Copart (CPRT) ====
+copart,CPRT
+cprt,CPRT
+auto auction,CPRT
+
+# ==== Corteva (CTVA) ====
+corteva,CTVA
+ctva,CTVA
+agriculture,CTVA
+
+# ==== Crown Castle (CCI) - Répété pour complétude (voir Immobilier)
+
+# ==== Freeport-McMoRan (FCX) ====
+freeport-mcmoran,FCX
+fcx,FCX
+copper,FCX
+
+# ==== International Flavors & Fragrances (IFF) ====
+international flavors & fragrances,IFF
+iff,IFF
+
+# ==== International Paper (IP) ====
+international paper,IP
+ip,IP
+
+# ==== Lamb Weston (LW) ====
+lamb weston,LW
+lw,LW
+frozen potato,LW
+
+# ==== Linde plc (LIN) ====
+linde plc,LIN
+linde,LIN
+lin,LIN
+linde gas,LIN
+linde ag,LIN
+
+# ==== LyondellBasell (LYB) ====
+lyondellbasell,LYB
+lyb,LYB
+
+# ==== Mosaic Company (The) (MOS) ====
+mosaic company,MOS
+mosaic,MOS
+phosphate,MOS
+
+# ==== Nucor (NUE) ====
+nucor,NUE
+nue,NUE
+steel,NUE
+
+# ==== Packaging Corporation of America (PKG) ====
+packaging corporation of america,PKG
+pkg,PKG
+
+# ==== Solenis (SOLV) ====
+solenis,SOLV
+solv,SOLV
+3m spinoff,SOLV
+
+# ==== Steel Dynamics (STLD) ====
+steel dynamics,STLD
+stld,STLD
+
+# ==== Smurfit Westrock (SW) ====
+smurfit westrock,SW
+westrock,SW
+
+# ==== Texas Pacific Land Corporation (TPL) ====
+texas pacific land corporation,TPL
+tpl,TPL
+
+# ==== Weyerhaeuser (WY) ====
+weyerhaeuser,WY
+wy,WY
+timber,WY
