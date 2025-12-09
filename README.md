@@ -194,7 +194,9 @@ Run Finnhub Ingestor	python -m ingestion.ingest_news_finhub
 
 
 
-
+# To run the script, use it as a module 
+python3 -m rag_market.ingestion.ingest_news_scrapping
+python3 -m rag_market.ingestion.ingest_news_finhub
 
 # Pour MAC
 
