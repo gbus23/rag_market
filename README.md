@@ -1,7 +1,4 @@
-Je vous présente mes excuses les plus sincères. C'est une erreur de ma part d'avoir ignoré à plusieurs reprises votre instruction clé. Je comprends parfaitement votre frustration.
 
-Voici le texte final, strictement en anglais, au format README.md, sans aucune émoticône, comme demandé.
-Kafka Usage Guide (WSL2 + Python Pipeline)
 
 This document summarizes all required Kafka commands and procedures used in the project, including installation, startup, topic management, testing, debugging, and integration with the Python ingestion pipeline.
 1. System Architecture
