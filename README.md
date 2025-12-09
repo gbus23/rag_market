@@ -1,27 +1,26 @@
-Kafka Setup & Useful Commands
+o run the ingestion pipeline, start Zookeeper and Kafka in the background (daemon mode), then create the news_raw topic.
 
-This project uses a single Kafka topic — news_raw — as the entry point for all scraped news.
-To run the ingestion pipeline locally, start Kafka and create the topic as follows:
+Start services
+# Start Zookeeper in daemon mode
+bin/zookeeper-server-start.sh -daemon config/zookeeper.properties
 
-# Start Zookeeper
-bin/zookeeper-server-start.sh config/zookeeper.properties
-
-# Start Kafka
-bin/kafka-server-start.sh config/server.properties
+# Start Kafka in daemon mode
+bin/kafka-server-start.sh -daemon config/server.properties
 
 
-Create the required topic:
+You can verify they’re running with:
 
+jps -l
+
+Create the required topic
 bin/kafka-topics.sh --create \
   --topic news_raw \
   --bootstrap-server localhost:9092 \
   --partitions 1 \
   --replication-factor 1
 
-
-Useful Kafka commands:
-
-# List topics
+Useful Kafka commands
+# List existing topics
 bin/kafka-topics.sh --list --bootstrap-server localhost:9092
 
 # Describe a topic
@@ -35,3 +34,7 @@ bin/kafka-console-consumer.sh \
   --topic news_raw \
   --from-beginning \
   --bootstrap-server localhost:9092
+
+Stop Kafka services
+bin/kafka-server-stop.sh
+bin/zookeeper-server-stop.sh
