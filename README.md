@@ -190,3 +190,24 @@ Consume Messages	bin/kafka-console-consumer.sh --bootstrap-server localhost:9092
 Delete Topic	bin/kafka-topics.sh --bootstrap-server localhost:9092 --delete --topic news_raw
 Run Dummy Ingestor	python -m ingestion.ingest_dummy
 Run Finnhub Ingestor	python -m ingestion.ingest_news_finhub
+
+
+
+
+
+
+# Pour MAC
+
+
+1️⃣ Installer Homebrew (si pas déjà fait)
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+2️⃣ Installer Kafka
+brew update
+brew install kafka
+
+🟢 Terminal 1 — Kafka
+  kafka-server-start /opt/homebrew/etc/kafka/server.properties
+✅ À ce stade, Kafka tourne en local sur :
+  localhost:9092
+🟢 Terminal 2 pour tester: 
+  kafka-topics --bootstrap-server localhost:9092 --list
