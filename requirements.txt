@@ -5,3 +5,4 @@ python-dateutil==2.9.0.post0
 requests-cache
 pandas
 bs4
+kafka-python

@@ -142,4 +142,4 @@ def run_polling(
 
 if __name__ == "__main__":
     # fenêtre de 30 minutes, polling toutes les 60 secondes
-    run_polling(interval_seconds=60, category="general", window_minutes=90)
+    run_polling(interval_seconds=120, category="general", window_minutes=1440)
