@@ -3,7 +3,7 @@ from __future__ import annotations
 import json
 from typing import Any, Dict, Optional
 
-from confluent_kafka import Producer
+from confluent_kafka import Producer, KafkaError
 
 from .config import KAFKA_BOOTSTRAP_SERVERS
 
@@ -21,17 +21,17 @@ def _delivery_report(err, msg) -> None:
         print(f"[KAFKA] Delivery failed for record {msg.key()}: {err}")
 
 
-def send_json(
-    producer: Producer,
-    topic: str,
-    value: Dict[str, Any],
-    key: Optional[str] = None,
-) -> None:
-    payload = json.dumps(value).encode("utf-8")
+def send_json(producer: Producer, topic: str, payload: Dict[str, Any], key: Optional[str] = None) -> None:
+    def delivery_report(err, msg):
+        if err is not None:
+            print(f"[KAFKA] Delivery failed for record {msg.value()}: {err}")
+        else:
+            pass
+
     producer.produce(
         topic=topic,
-        key=key.encode("utf-8") if key else None,
-        value=payload,
-        callback=_delivery_report,
+        key=str(key) if key is not None else None,
+        value=json.dumps(payload, ensure_ascii=False).encode("utf-8"),
+        on_delivery=delivery_report,
     )
     producer.poll(0)

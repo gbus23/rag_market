@@ -89,7 +89,6 @@ youtube tv,GOOGL
 gmail,GOOGL
 google maps,GOOGL
 google cloud,GOOGL
-gcp,GOOGL
 google drive,GOOGL
 google docs,GOOGL
 google photos,GOOGL
@@ -204,7 +203,6 @@ megapack,TSLA
 powerwall,TSLA
 full self driving,TSLA
 fsd beta,TSLA
-autopilot,TSLA
 elon musk,TSLA
 starship,TSLA
 spacex,TSLA
@@ -219,8 +217,6 @@ netflix series,NFLX
 netflix filme,NFLX
 netflix show,NFLX
 stream on netflix,NFLX
-streamer,NFLX
-binger,NFLX
 le netflix,NFLX
 streaming netflix,NFLX
 
@@ -233,7 +229,6 @@ illustrator,ADBE
 premiere pro,ADBE
 creative cloud,ADBE
 acrobat,ADBE
-pdf,ADBE
 
 # ==== Advanced Micro Devices (AMD) ====
 amd,AMD
@@ -246,7 +241,6 @@ epyc,AMD
 
 # ==== Applied Materials (AMAT) ====
 applied materials,AMAT
-amat,AMAT
 semiconductor equipment,AMAT
 
 # ==== Broadcom (AVGO) ====
@@ -275,7 +269,6 @@ cybersecurity,CRWD
 # ==== Datadog (DDOG) ====
 datadog,DDOG
 ddog,DDOG
-monitoring software,DDOG
 
 # ==== Dell Technologies (DELL) ====
 dell,DELL
@@ -284,13 +277,11 @@ alienware,DELL
 
 # ==== Electronic Arts (EA) ====
 electronic arts,EA
- ea ,EA
 ea sports,EA
 fifa game,EA
 
 # ==== Enphase Energy (ENPH) ====
 enphase energy,ENPH
-enph,ENPH
 solar inverter,ENPH
 
 # ==== F5, Inc. (FFIV) ====
@@ -311,13 +302,10 @@ domain registrar,GDDY
 ibm,IBM
 international business machines,IBM
 ibm corp,IBM
-red hat,IBM
 watson ai,IBM
 
 # ==== Intel (INTC) ====
-intel,INTC
 intel corporation,INTC
-intc,INTC
 intel chips,INTC
 xeon,INTC
 core i9,INTC
@@ -372,7 +360,6 @@ next-gen firewall,PANW
 
 # ==== Paycom (PAYC) ====
 paycom,PAYC
-human capital management,PAYC
 
 # ==== PayPal (PYPL) ====
 paypal,PYPL
@@ -421,8 +408,6 @@ programmatic advertising,TTD
 
 # ==== Tyler Technologies (TYL) ====
 tyler technologies,TYL
-tyl,TYL
-govtech,TYL
 
 # ==== Verisign (VRSN) ====
 verisign,VRSN
@@ -431,7 +416,6 @@ vrsn,VRSN
 
 # ==== Verizon (VZ) ====
 verizon,VZ
-vz,VZ
 verizon wireless,VZ
 fios,VZ
 
@@ -447,7 +431,6 @@ hcm software,WDAY
 # ==== Walt Disney Company (The) (DIS) ====
 disney,DIS
 walt disney,DIS
-dis,DIS
 disney stock,DIS
 disney+,DIS
 disney plus,DIS
@@ -481,7 +464,6 @@ priceline,BKNG
 
 # ==== CarMax (KMX) ====
 carmax,KMX
-used cars,KMX
 
 # ==== Carnival (CCL) ====
 carnival,CCL
@@ -495,7 +477,6 @@ burrito,CMG
 
 # ==== Deckers Brands (DECK) ====
 deckers brands,DECK
-ugg,DECK
 hoka,DECK
 
 # ==== Delta Air Lines (DAL) ====
@@ -626,13 +607,13 @@ uber ride,UBER
 
 # ==== Ulta Beauty (ULTA) ====
 ulta beauty,ULTA
-ulta,ULTA
+
 beauty products,ULTA
 
 # ==== United Airlines Holdings (UAL) ====
 united airlines holdings,UAL
 united airlines,UAL
-ual,UAL
+
 
 # ==== Wynn Resorts (WYNN) ====
 wynn resorts,WYNN
@@ -686,7 +667,6 @@ frappuccino,SBUX
 coca cola,KO
 coca-cola,KO
 coke,KO
-ko,KO
 coke zero,KO
 sprite,KO
 fanta,KO
@@ -713,22 +693,19 @@ frito lay,PEP
 mmm,MMM
 scotch tape,MMM
 post-it,MMM
-ppe,MMM
 
 # ==== Altria (MO) ====
 altria,MO
-mo,MO
 marlboro,MO
 
 # ==== Amcor (AMCR) ====
 amcor,AMCR
 amcr,AMCR
-packaging,AMCR
+
 
 # ==== Archer Daniels Midland (ADM) ====
 archer daniels midland,ADM
 adm,ADM
-agribusiness,ADM
 
 # ==== Campbell's Company (The) (CPB) ====
 campbell's company,CPB
@@ -757,7 +734,6 @@ gorilla glass,GLW
 
 # ==== Estée Lauder Companies (The) (EL) ====
 estée lauder,EL
-el,EL
 mac cosmetics,EL
 
 # ==== General Mills (GIS) ====
@@ -823,14 +799,12 @@ monster energy,MNST
 
 # ==== Procter & Gamble (PG) ====
 procter & gamble,PG
-pg,PG
 pampers,PG
 tide detergent,PG
 gillette,PG
 
 # ==== The Cooper Companies (COO) ====
 cooper companies,COO
-coo,COO
 cooper vision,COO
 
 # ==== Tyson Foods (TSN) ====
@@ -857,7 +831,6 @@ carte visa,V
 # ==== Mastercard (MA) ====
 mastercard,MA
 master card,MA
-ma,MA
 master card inc,MA
 carte mastercard,MA
 
@@ -871,8 +844,6 @@ chase,JPM
 
 # ==== Bank of America (BAC) ====
 bank of america,BAC
-boa,BAC
-bac,BAC
 bofa,BAC
 bankamerica,BAC
 
@@ -885,7 +856,6 @@ the goldman,GS
 
 # ==== Morgan Stanley (MS) ====
 morgan stanley,MS
-ms,MS
 morgan stanley corp,MS
 stanley,MS
 
@@ -901,7 +871,6 @@ axp,AXP
 
 # ==== American International Group (AIG) ====
 american international group,AIG
-aig,AIG
 
 # ==== Ameriprise Financial (AMP) ====
 ameriprise financial,AMP
@@ -973,7 +942,6 @@ franklin templeton,BEN
 
 # ==== Globe Life (GL) ====
 globe life,GL
-insurance,GL
 
 # ==== Hartford (The) (HIG) ====
 hartford,HIG
@@ -1014,7 +982,7 @@ guy carpenter,MMC
 
 # ==== MetLife (MET) ====
 metlife,MET
-met,MET
+
 
 # ==== Moody's Corporation (MCO) ====
 moody's corporation,MCO
@@ -1203,11 +1171,9 @@ centene,CNC
 
 # ==== Charles River Laboratories (CRL) ====
 charles river laboratories,CRL
-crl,CRL
 
 # ==== Cigna (CI) ====
 cigna,CI
-ci,CI
 evernorth,CI
 
 # ==== Cooper Companies (The) (COO) - Répété pour complétude (voir Consommation de Base)
@@ -1241,11 +1207,11 @@ gild,GILD
 
 # ==== HCA Healthcare (HCA) ====
 hca healthcare,HCA
-hca,HCA
+
 
 # ==== Healthpeak Properties (DOC) ====
 healthpeak properties,DOC
-doc,DOC
+
 
 # ==== Henry Schein (HSIC) ====
 henry schein,HSIC
@@ -1262,11 +1228,10 @@ hum,HUM
 # ==== Idexx Laboratories (IDXX) ====
 idexx laboratories,IDXX
 idexx,IDXX
-animal health,IDXX
 
 # ==== Incyte (INCY) ====
 incyte,INCY
-incy,INCY
+
 
 # ==== Insulet Corporation (PODD) ====
 insulet corporation,PODD
@@ -1274,7 +1239,7 @@ omnipod,PODD
 
 # ==== IQVIA (IQV) ====
 iqvia,IQV
-cro,IQV
+
 
 # ==== Labcorp (LH) ====
 labcorp,LH
@@ -1317,7 +1282,6 @@ perkinelmer,RVTY
 
 # ==== Steris (STE) ====
 steris,STE
-ste,STE
 
 # ==== Stryker Corporation (SYK) ====
 stryker corporation,SYK
@@ -1326,24 +1290,19 @@ stryker,SYK
 # ==== Thermo Fisher Scientific (TMO) ====
 thermo fisher scientific,TMO
 thermo fisher,TMO
-tmo,TMO
 
 # ==== Universal Health Services (UHS) ====
 universal health services,UHS
-uhs,UHS
 
 # ==== Ventas (VTR) ====
 ventas,VTR
-vtr,VTR
 
 # ==== Veralto (VLTO) ====
 veralto,VLTO
-vlt,VLTO
 
 # ==== Vertex Pharmaceuticals (VRTX) ====
 vertex pharmaceuticals,VRTX
 vertex,VRTX
-vrtx,VRTX
 
 # ==== Viatris (VTRS) ====
 viatris,VTRS
@@ -1352,20 +1311,16 @@ mylan,VTRS
 
 # ==== Welltower (WELL) ====
 welltower,WELL
-well,WELL
+
 
 # ==== West Pharmaceutical Services (WST) ====
 west pharmaceutical services,WST
-wst,WST
 
 # ==== Zimmer Biomet (ZBH) ====
 zimmer biomet,ZBH
-zbh,ZBH
 
 # ==== Zoetis (ZTS) ====
 zoetis,ZTS
-zts,ZTS
-animal pharma,ZTS
 
 # ------------------------------------------------------------------------------------
 # Secteur Énergie
@@ -1397,7 +1352,6 @@ bkr,BKR
 
 # ==== ConocoPhillips (COP) ====
 conocophillips,COP
-cop,COP
 
 # ==== Coterra (CTRA) ====
 coterra,CTRA
@@ -1409,7 +1363,6 @@ dvn,DVN
 
 # ==== Diamondback Energy (FANG) ====
 diamondback energy,FANG
-fang,FANG
 
 # ==== EOG Resources (EOG) ====
 eog resources,EOG
@@ -1421,12 +1374,10 @@ eqt,EQT
 
 # ==== Halliburton (HAL) ====
 halliburton,HAL
-hal,HAL
 
 # ==== Kinder Morgan (KMI) ====
 kinder morgan,KMI
 kmi,KMI
-pipeline,KMI
 
 # ==== Marathon Petroleum (MPC) ====
 marathon petroleum,MPC
@@ -1435,7 +1386,6 @@ mpc,MPC
 # ==== NextEra Energy (NEE) ====
 nextera energy,NEE
 nee,NEE
-fpl,NEE
 
 # ==== NRG Energy (NRG) ====
 nrg energy,NRG
@@ -1443,7 +1393,6 @@ nrg,NRG
 
 # ==== Occidental Petroleum (OXY) ====
 occidental petroleum,OXY
-oxy,OXY
 
 # ==== Phillips 66 (PSX) ====
 phillips 66,PSX
@@ -1455,7 +1404,6 @@ slb,SLB
 
 # ==== Sempra (SRE) ====
 sempra,SRE
-sre,SRE
 
 # ==== Targa Resources (TRGP) ====
 targa resources,TRGP
@@ -1463,7 +1411,6 @@ trgp,TRGP
 
 # ==== Valero Energy (VLO) ====
 valero energy,VLO
-vlo,VLO
 
 # ==== Vistra Corp. (VST) ====
 vistra corp,VST
@@ -1471,7 +1418,6 @@ vistra,VST
 
 # ==== Williams Companies (WMB) ====
 williams companies,WMB
-wmb,WMB
 
 # ------------------------------------------------------------------------------------
 # Secteur Industriel
@@ -1480,7 +1426,6 @@ wmb,WMB
 # ==== Ford Motor Company (F) ====
 ford,F
 ford motor,F
-f,F
 mustang,F
 f-150,F
 ford motors,F
@@ -1493,7 +1438,6 @@ ford focus,F
 
 # ==== Boeing (BA) ====
 boeing,BA
-ba,BA
 boeing 737,BA
 boeing 787,BA
 boeing 777,BA
@@ -1509,7 +1453,6 @@ caterpillar,CAT
 caterpillar inc,CAT
 cat machinery,CAT
 cat equipment,CAT
-cat,CAT
 cat inc,CAT
 caterpillar machines,CAT
 cat construction,CAT
@@ -1531,11 +1474,9 @@ kwikset,ALLE
 
 # ==== Ametek (AME) ====
 ametek,AME
-ame,AME
 
 # ==== Amphenol (APH) ====
 amphenol,APH
-aph,APH
 
 # ==== Aptiv (APTV) ====
 aptiv,APTV
@@ -1552,17 +1493,14 @@ bldr,BLDR
 # ==== C.H. Robinson (CHRW) ====
 c.h. robinson,CHRW
 ch robinson,CHRW
-logistics,CHRW
 
 # ==== Carrier Global (CARR) ====
 carrier global,CARR
-carrier,CARR
 hvac,CARR
 
 # ==== Cummins (CMI) ====
 cummins,CMI
 cmi,CMI
-diesel engine,CMI
 
 # ==== Deere & Company (DE) ====
 deere & company,DE
@@ -1583,7 +1521,6 @@ eaton,ETN
 
 # ==== Emerson Electric (EMR) ====
 emerson electric,EMR
-emr,EMR
 
 # ==== Expeditors International (EXPD) ====
 expeditors international,EXPD
@@ -1591,7 +1528,6 @@ expeditors,EXPD
 
 # ==== Fastenal (FAST) ====
 fastenal,FAST
-fast,FAST
 
 # ==== Fortune Brands Innovations (FBIN) ====
 fortune brands,FBIN
@@ -1600,19 +1536,15 @@ masterbrand,FBIN
 # ==== Generac (GNRC) ====
 generac,GNRC
 gnrc,GNRC
-generators,GNRC
 
 # ==== General Dynamics (GD) ====
 general dynamics,GD
-gd,GD
 
 # ==== Genuine Parts Company (GPC) ====
 genuine parts company,GPC
-gpc,GPC
 
 # ==== Howmet Aerospace (HWM) ====
 howmet aerospace,HWM
-hwm,HWM
 
 # ==== Hubbell Incorporated (HUBB) ====
 hubbell incorporated,HUBB
@@ -1632,7 +1564,6 @@ itw,ITW
 
 # ==== Ingersoll Rand (IR) ====
 ingersoll rand,IR
-ir,IR
 
 # ==== J.B. Hunt (JBHT) ====
 j.b. hunt,JBHT
@@ -1712,7 +1643,6 @@ waste disposal,RSG
 
 # ==== Rockwell Automation (ROK) ====
 rockwell automation,ROK
-rok,ROK
 
 # ==== Rollins, Inc. (ROL) ====
 rollins,ROL
@@ -1720,7 +1650,6 @@ pest control,ROL
 
 # ==== Roper Technologies (ROP) ====
 roper technologies,ROP
-rop,ROP
 
 # ==== RTX Corporation (RTX) ====
 rtx corporation,RTX
@@ -1738,7 +1667,7 @@ dewalt,SWK
 
 # ==== TE Connectivity (TEL) ====
 te connectivity,TEL
-tel,TEL
+
 
 # ==== Teledyne Technologies (TDY) ====
 teledyne technologies,TDY
@@ -1769,12 +1698,10 @@ unp,UNP
 
 # ==== United Parcel Service (UPS) ====
 united parcel service,UPS
-ups,UPS
 package delivery,UPS
 
 # ==== United Rentals (URI) ====
 united rentals,URI
-uri,URI
 
 # ==== Vulcan Materials Company (VMC) ====
 vulcan materials company,VMC
@@ -1791,7 +1718,7 @@ wab,WAB
 # ==== Waste Management (WM) ====
 waste management,WM
 wm,WM
-garbage,WM
+
 
 # ==== Zebra Technologies (ZBRA) ====
 zebra technologies,ZBRA
@@ -1804,7 +1731,6 @@ zbra,ZBRA
 # ==== Alexandria Real Estate Equities (ARE) ====
 alexandria real estate equities,ARE
 alexandria real estate,ARE
-are,ARE
 life science reit,ARE
 
 # ==== AvalonBay Communities (AVB) ====
@@ -1836,7 +1762,6 @@ eqr,EQR
 
 # ==== Essex Property Trust (ESS) ====
 essex property trust,ESS
-ess,ESS
 
 # ==== Extra Space Storage (EXR) ====
 extra space storage,EXR
@@ -1844,7 +1769,6 @@ exr,EXR
 
 # ==== Federal Realty Investment Trust (FRT) ====
 federal realty,FRT
-frt,FRT
 
 # ==== Host Hotels & Resorts (HST) ====
 host hotels & resorts,HST
@@ -1863,11 +1787,9 @@ data management,IRM
 
 # ==== Kimco Realty (KIM) ====
 kimco realty,KIM
-kim,KIM
 
 # ==== Mid-America Apartment Communities (MAA) ====
 mid-america apartment communities,MAA
-maa,MAA
 
 # ==== Prologis (PLD) ====
 prologis,PLD
@@ -1884,7 +1806,6 @@ monthly dividend company,O
 
 # ==== Regency Centers (REG) ====
 regency centers,REG
-reg,REG
 
 # ==== SBA Communications (SBAC) ====
 sba communications,SBAC
@@ -1916,7 +1837,6 @@ lithium,ALB
 
 # ==== Ball Corporation (BALL) ====
 ball corporation,BALL
-ball,BALL
 metal packaging,BALL
 
 # ==== Bunge Global (BG) ====
@@ -1930,8 +1850,6 @@ celanese,CE
 
 # ==== CF Industries (CF) ====
 cf industries,CF
-cf,CF
-fertilizer,CF
 
 # ==== Copart (CPRT) ====
 copart,CPRT
@@ -1941,22 +1859,18 @@ auto auction,CPRT
 # ==== Corteva (CTVA) ====
 corteva,CTVA
 ctva,CTVA
-agriculture,CTVA
 
 # ==== Crown Castle (CCI) - Répété pour complétude (voir Immobilier)
 
 # ==== Freeport-McMoRan (FCX) ====
 freeport-mcmoran,FCX
-fcx,FCX
-copper,FCX
+
 
 # ==== International Flavors & Fragrances (IFF) ====
 international flavors & fragrances,IFF
-iff,IFF
 
 # ==== International Paper (IP) ====
 international paper,IP
-ip,IP
 
 # ==== Lamb Weston (LW) ====
 lamb weston,LW
@@ -1965,8 +1879,6 @@ frozen potato,LW
 
 # ==== Linde plc (LIN) ====
 linde plc,LIN
-linde,LIN
-lin,LIN
 linde gas,LIN
 linde ag,LIN
 
@@ -1976,13 +1888,9 @@ lyb,LYB
 
 # ==== Mosaic Company (The) (MOS) ====
 mosaic company,MOS
-mosaic,MOS
-phosphate,MOS
 
 # ==== Nucor (NUE) ====
 nucor,NUE
-nue,NUE
-steel,NUE
 
 # ==== Packaging Corporation of America (PKG) ====
 packaging corporation of america,PKG
@@ -1990,7 +1898,6 @@ pkg,PKG
 
 # ==== Solenis (SOLV) ====
 solenis,SOLV
-solv,SOLV
 3m spinoff,SOLV
 
 # ==== Steel Dynamics (STLD) ====
@@ -2007,5 +1914,152 @@ tpl,TPL
 
 # ==== Weyerhaeuser (WY) ====
 weyerhaeuser,WY
-wy,WY
-timber,WY
+
+# ==== EUROPE ====
+
+# ==== LVMH (MC.PA) ====
+lvmh,MC.PA
+moet hennessy louis vuitton,MC.PA
+lvmh group,MC.PA
+lvmh groupe,MC.PA
+
+# ==== Kering (KER.PA) ====
+kering,KER.PA
+groupe kering,KER.PA
+
+# ==== Hermès (RMS.PA) ====
+hermes international,RMS.PA
+maison hermes,RMS.PA
+groupe hermes,RMS.PA
+
+# ==== L'Oréal (OR.PA) ====
+l'oreal,OR.PA
+groupe l'oreal,OR.PA
+
+# ==== Richemont (CFR.SW) ====
+richemont,CFR.SW
+compagnie financiere richemont,CFR.SW
+
+# ==== Inditex (ITX.MC) ====
+inditex,ITX.MC
+grupo inditex,ITX.MC
+
+# ==== Nestlé (NESN.SW) ====
+nestle sa,NESN.SW
+nestlé sa,NESN.SW
+nestle group,NESN.SW
+
+# ==== Unilever (ULVR.L) ====
+unilever plc,ULVR.L
+unilever group,ULVR.L
+
+# ==== Airbus (AIR.PA) ====
+airbus group,AIR.PA
+airbus se,AIR.PA
+
+# ==== Safran (SAF.PA) ====
+safran group,SAF.PA
+groupe safran,SAF.PA
+
+# ==== Thales (HO.PA) ====
+thales group,HO.PA
+groupe thales,HO.PA
+
+# ==== Stellantis (STLAM.MI) ====
+stellantis group,STLAM.MI
+groupe stellantis,STLAM.MI
+
+# ==== Volkswagen (VOW3.DE) ====
+volkswagen group,VOW3.DE
+vw group,VOW3.DE
+
+# ==== Mercedes-Benz Group (MBG.DE) ====
+mercedes benz group,MBG.DE
+mercedes-benz ag,MBG.DE
+
+# ==== BMW (BMW.DE) ====
+bmw group,BMW.DE
+bayerische motoren werke,BMW.DE
+
+# ==== Siemens (SIE.DE) ====
+siemens ag,SIE.DE
+siemens group,SIE.DE
+
+# ==== ASML (ASML.AS) ====
+asml holding,ASML.AS
+asml group,ASML.AS
+
+# ==== SAP (SAP.DE) ====
+sap se,SAP.DE
+sap germany,SAP.DE
+sap group,SAP.DE
+
+# ==== TotalEnergies (TTE.PA) ====
+totalenergies se,TTE.PA
+groupe totalenergies,TTE.PA
+
+# ==== Shell (SHEL.AS) ====
+shell plc,SHEL.AS
+royal dutch shell,SHEL.AS
+
+# ==== BP (BP.L) ====
+bp plc,BP.L
+bp group,BP.L
+british petroleum company,BP.L
+
+# ==== Enel (ENEL.MI) ====
+enel spa,ENEL.MI
+gruppo enel,ENEL.MI
+
+# ==== Iberdrola (IBE.MC) ====
+iberdrola sa,IBE.MC
+grupo iberdrola,IBE.MC
+
+# ==== BNP Paribas (BNP.PA) ====
+bnp paribas,BNP.PA
+groupe bnp paribas,BNP.PA
+banque bnp paribas,BNP.PA
+
+# ==== Société Générale (GLE.PA) ====
+societe generale,GLE.PA
+groupe societe generale,GLE.PA
+
+# ==== Crédit Agricole (ACA.PA) ====
+credit agricole group,ACA.PA
+groupe credit agricole,ACA.PA
+
+# ==== AXA (CS.PA) ====
+axa group,CS.PA
+groupe axa,CS.PA
+
+# ==== Deutsche Bank (DBK.DE) ====
+deutsche bank ag,DBK.DE
+deutsche bank group,DBK.DE
+
+# ==== UBS Group (UBSG.SW) ====
+ubs group,UBSG.SW
+ubs ag,UBSG.SW
+
+# ==== HSBC (HSBA.L) ====
+hsbc holdings,HSBA.L
+hsbc group,HSBA.L
+
+# ==== Santander (SAN.MC) ====
+banco santander,SAN.MC
+grupo santander,SAN.MC
+
+# ==== ING (INGA.AS) ====
+ing group,INGA.AS
+ing bank,INGA.AS
+
+# ==== Novo Nordisk (NOVO-B.CO) ====
+novo nordisk a/s,NOVO-B.CO
+novo nordisk group,NOVO-B.CO
+
+# ==== Roche (ROG.SW) ====
+roche holding,ROG.SW
+f. hoffmann-la roche,ROG.SW
+
+# ==== Novartis (NOVN.SW) ====
+novartis ag,NOVN.SW
+novartis group,NOVN.SW
