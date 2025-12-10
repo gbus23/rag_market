@@ -503,7 +503,6 @@ hotels.com,EXPE
 
 # ==== General Motors (GM) ====
 general motors,GM
-gm,GM
 gm motors,GM
 chevrolet,GM
 chevy,GM
@@ -705,7 +704,7 @@ amcr,AMCR
 
 # ==== Archer Daniels Midland (ADM) ====
 archer daniels midland,ADM
-adm,ADM
+
 
 # ==== Campbell's Company (The) (CPB) ====
 campbell's company,CPB
@@ -738,7 +737,6 @@ mac cosmetics,EL
 
 # ==== General Mills (GIS) ====
 general mills,GIS
-gis,GIS
 cheerios,GIS
 betty crocker,GIS
 
@@ -850,7 +848,6 @@ bankamerica,BAC
 # ==== Goldman Sachs (GS) ====
 goldman sachs,GS
 goldman,GS
-gs,GS
 goldman sachs group,GS
 the goldman,GS
 
@@ -1194,7 +1191,7 @@ cgm,DXCM
 
 # ==== Edwards Lifesciences (EW) ====
 edwards lifesciences,EW
-ew,EW
+
 
 # ==== Elevance Health (ELV) ====
 elevance health,ELV
@@ -1817,7 +1814,6 @@ spg,SPG
 mall reit,SPG
 
 # ==== UDR, Inc. (UDR) ====
-udr,UDR
 udr inc,UDR
 
 # ==== Vici Properties (VICI) ====
@@ -2043,6 +2039,7 @@ ubs ag,UBSG.SW
 # ==== HSBC (HSBA.L) ====
 hsbc holdings,HSBA.L
 hsbc group,HSBA.L
+hsbc,HSBA.L
 
 # ==== Santander (SAN.MC) ====
 banco santander,SAN.MC
@@ -2051,6 +2048,7 @@ grupo santander,SAN.MC
 # ==== ING (INGA.AS) ====
 ing group,INGA.AS
 ing bank,INGA.AS
+ING,INGA.AS
 
 # ==== Novo Nordisk (NOVO-B.CO) ====
 novo nordisk a/s,NOVO-B.CO
