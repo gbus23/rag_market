@@ -11,6 +11,8 @@ Exemple d'utilisation:
 """
 
 import json
+import os
+import re
 import threading
 import time
 from collections import deque
@@ -18,14 +20,16 @@ from typing import Optional
 
 import requests
 from confluent_kafka import Consumer, KafkaError
+from dotenv import load_dotenv
 
 from ingestion.ticker_resolver_local import resolve_ticker_from_text
 from ingestion.config import KAFKA_BOOTSTRAP_SERVERS, NEWS_TOPIC
 
 
 # Configuration
-OLLAMA_BASE_URL = "http://localhost:11434"
-MODEL_NAME = "mistral:latest"
+load_dotenv()  # load .env if present so MODEL_NAME and others can be customized
+OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL", "http://localhost:11434")
+MODEL_NAME = os.getenv("MODEL_NAME", "llama3.2:1b")
 MAX_ARTICLES_MEMORY = 1000  # Keep last N articles in memory
 
 
@@ -221,6 +225,77 @@ Provide a concise analysis (2-3 sentences) based on the articles above. Be factu
             )
         except Exception as e:
             raise Exception(f"Error calling Ollama: {e}")
+
+    def get_sentiment(self, ticker: str, limit: int = 5) -> Optional[dict]:
+        """
+        Compute a simple sentiment for a ticker based on recent articles.
+        Returns a dict with keys: sentiment (Positive/Neutral/Negative), score (-1..1), reasoning, raw.
+        """
+        ticker = ticker.upper()
+        articles = self.buffer.get_articles_by_ticker(ticker, limit=limit)
+        if not articles:
+            return None
+
+        summaries = []
+        for a in articles:
+            parts = []
+            if a.get("headline"):
+                parts.append(a["headline"])
+            if a.get("description"):
+                parts.append(a["description"])
+            summaries.append(" - ".join(parts))
+
+        prompt = (
+            "You are a market news analyst. Given recent headlines/snippets for a stock, "
+            "return ONE JSON object only. Fields: "
+            '"sentiment" (Positive, Neutral, or Negative), '
+            '"score" (number between -1 and 1), '
+            '"reasoning" (short text). '
+            "Return ONLY JSON, no markdown, no code fences, no extra text. "
+            "Example: {\"sentiment\":\"Positive\",\"score\":0.3,\"reasoning\":\"...\"}\n\n"
+            f"Ticker: {ticker}\n"
+            "Headlines:\n"
+            + "\n".join(f"- {s}" for s in summaries[:limit])
+        )
+
+        try:
+            raw = self._call_ollama(prompt)
+            parsed = None
+            # try full string first
+            try:
+                parsed = json.loads(raw)
+            except Exception:
+                # try to extract first JSON object substring
+                match = re.search(r"\{.*\}", raw, flags=re.DOTALL)
+                if match:
+                    parsed = json.loads(match.group(0))
+
+            if not parsed:
+                return {
+                    "sentiment": "Unknown",
+                    "score": 0.0,
+                    "reasoning": "Could not parse model output",
+                    "raw": raw,
+                }
+
+            sentiment = parsed.get("sentiment")
+            score = parsed.get("score")
+            reasoning = parsed.get("reasoning", "")
+            if sentiment is None or score is None:
+                return {
+                    "sentiment": "Unknown",
+                    "score": 0.0,
+                    "reasoning": "Missing fields in model output",
+                    "raw": raw,
+                }
+            return {
+                "sentiment": str(sentiment),
+                "score": float(score),
+                "reasoning": reasoning,
+                "raw": raw,
+            }
+        except Exception:
+            return None
 
 
 def main():

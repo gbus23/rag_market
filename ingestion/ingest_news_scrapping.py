@@ -109,7 +109,7 @@ def run_scraping_loop(
 
 if __name__ == "__main__":
     run_scraping_loop(
-        interval_seconds=120,
+        interval_seconds=60,
         fresh_minutes=1440,
         enable_bfm=False,
         enable_ts=True,
