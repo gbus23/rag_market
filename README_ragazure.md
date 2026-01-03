@@ -1,7 +1,7 @@
+
 # ☁️ Real-Time Financial RAG (Full Azure Edition)
 
-A robust, cloud-native **Real-Time Retrieval-Augmented Generation (RAG)** system.  
-This project ingests financial news streams via **Kafka**, indexes them instantly using **Azure AI Search**, and uses **Azure OpenAI (GPT-4)** to answer user queries with up-to-the-second context.
+A robust, cloud-native Real-Time Retrieval-Augmented Generation system. This project ingests financial news streams via **Apache Kafka**, indexes them instantly using **Azure AI Search**, and uses **Azure OpenAI (GPT-4)** to answer user queries with up-to-the-second context.
 
 ---
 
@@ -30,56 +30,49 @@ Here is how the files interact with each other and the infrastructure:
         v                                                        |
 +------------------+                                             |
 | rag_app_azure.py | --------------------------------------------+
-| (RAG Logic)      |     (5) Semantic Search & LLM Generation
+| (RAG Logic)      |            (5) Semantic Search & LLM Generation
 +------------------+
 
-🔍 Key Components
+```
 
-ingestion/ingest_*.py
-Scripts that fetch data (API or Mock) and push it to Kafka.
+### 🔍 Key Components
 
-indexer_service.py
-The Writer. Reads Kafka, converts text to embeddings (Azure OpenAI), and pushes documents to Azure AI Search.
+1. **`ingestion/ingest_*.py`**: Modular scripts acting as **Producers**. They fetch data from APIs (Finnhub) or generate mock data, normalize it to JSON, and push it to the Kafka topic `news_raw`.
+2. **`indexer_service.py`**: The **Consumer/Writer**. This background service listens to Kafka, converts article text into Embeddings using Azure OpenAI, secures IDs (Base64 encoding), and pushes the enriched documents to Azure AI Search.
+3. **`rag_app_ui.py`**: The **Frontend**. A Streamlit interface that allows users to view the system status and ask questions.
+4. **`rag_app_azure.py`**: The **Reader Logic**. It handles the connection to Azure, performs Hybrid Search (Vector + Keyword), constructs the context, and calls the LLM (GPT-4) to generate the final answer.
 
-rag_app_ui.py
-The frontend. Displays the Streamlit interface.
+---
 
-rag_app_azure.py
-The Reader. Performs hybrid search and generates answers via GPT.
+## ⚙️ Prerequisites
 
-⚙️ Prerequisites
+1. **Python 3.10+**
+2. **Apache Kafka** (Running locally via Homebrew or Docker).
+3. **Azure Account** with:
+* **Azure AI Search** resource.
+* **Azure OpenAI** resource (with deployments for `text-embedding-3` and `gpt-4` / `model-router`).
 
-Python 3.10+
 
-Apache Kafka (running locally via Homebrew or Docker)
 
-Azure account with:
+### Installation
 
-Azure AI Search
-
-Azure OpenAI (deployments for text-embedding-3 and gpt-4 / model-router)
-
-📦 Installation
+```bash
 # 1. Create virtual environment
 python3 -m venv .venv
 source .venv/bin/activate
 
-# 2. Install dependencies
-pip install \
-  streamlit \
-  confluent-kafka \
-  openai \
-  azure-search-documents \
-  azure-core \
-  python-dotenv \
-  requests \
-  finnhub-python
+# 2. Install specific dependencies
+pip install streamlit confluent-kafka openai azure-search-documents azure-core python-dotenv requests finnhub-python
 
-🔑 Configuration (.env)
+```
 
-Create a .env file at the root of the project.
-Do not commit this file.
+---
 
+## 🔑 Configuration (.env)
+
+Create a `.env` file at the root of the project. **Do not commit this file.**
+
+```ini
 # --- KAFKA INFRASTRUCTURE ---
 KAFKA_BOOTSTRAP_SERVERS=localhost:9092
 NEWS_TOPIC=news_raw
@@ -88,101 +81,93 @@ NEWS_TOPIC=news_raw
 FINNHUB_API_KEY=your_finnhub_api_key
 
 # --- AZURE AI SEARCH (Vector DB) ---
-AZURE_SEARCH_ENDPOINT=https://your-service-name.search.windows.net
+# The URL of your search service (e.g., [https://my-service.search.windows.net](https://my-service.search.windows.net))
+AZURE_SEARCH_ENDPOINT=[https://your-service-name.search.windows.net](https://your-service-name.search.windows.net)
+# The Admin Key (found in Azure Portal > Keys)
 AZURE_SEARCH_KEY=your_azure_search_admin_key
 INDEX_NAME=rag-index
 
 # --- AZURE OPENAI (Embeddings & LLM) ---
-AZURE_OPENAI_ENDPOINT=https://your-resource-name.openai.azure.com/
+# The URL of your cognitive service
+AZURE_OPENAI_ENDPOINT=[https://your-resource-name.openai.azure.com/](https://your-resource-name.openai.azure.com/)
 OPENAI_KEY=your_azure_openai_key
 
-🚀 How to Run (4-Terminal Setup)
-
-To see the full pipeline in action, open 4 separate terminals.
-
-Terminal 1 — Infrastructure (Kafka)
-
-Start Zookeeper and Kafka services.
-
-# macOS (Homebrew)
-brew services start zookeeper
-brew services start kafka
-
-Terminal 2 — Ingestion (Producers)
-
-Start fetching news.
-
-source .venv/bin/activate
-
-# Real data (slow flow)
-python3 -m ingestion.ingest_news_finhub &
-
-# Mock data (fast flow for demo)
-python3 -m ingestion.ingest_fake
-
-Terminal 3 — Indexing Service (Worker)
-
-Bridges Kafka and Azure AI Search.
-
-source .venv/bin/activate
-python3 indexer_service.py
-
-
-You should see logs like:
-
-✅ Indexé: TSLA jumps 5%...
-
-Terminal 4 — User Interface (App)
-
-Launch the Streamlit web interface.
-
-source .venv/bin/activate
-streamlit run rag_app_ui.py
-
-🎮 Features & Usage
-
-Full Cloud Integration
-Data persists in Azure AI Search (no local RAM storage).
-
-Hybrid Search
-Combines BM25 keyword search with vector similarity for maximum relevance.
-
-Real-Time
-News becomes searchable milliseconds after ingestion.
-
-Scalable Architecture
-Kafka-based decoupling handles high throughput.
-
-Example Query
-
-"Why is NVDA stock moving today?"
-
-Result:
-The system retrieves the latest indexed articles, cites the source (e.g. Finnhub or FakeNewsGenerator), and generates a concise explanation using GPT-4.
-
-🛠️ Troubleshooting
-
-DummyBuffer object has no attribute...
-Ensure rag_app_ui.py imports rag_app_azure.py, which handles the Azure connection.
-
-Invalid document key
-Azure Search IDs cannot contain special characters.
-Use Base64 encoding in indexer_service.py.
-
-Kafka connection refused
-Check that localhost:9092 is reachable and restart Kafka services.
-
-✅ Status
-
-✔ Fully functional
-✔ Cloud-native
-✔ Production-ready RAG architecture
-
+```
 
 ---
 
-Si tu veux, je peux aussi te fournir :
-- une **version plus concise** (README “portfolio-ready”)
-- un **diagramme Mermaid**
-- une **section “Architecture Decisions”**
-- ou une **checklist de déploiement Azure**
+## 🚀 How to Run (4 Terminal Setup)
+
+To see the full pipeline in action, you need to open 4 separate terminals:
+
+### Terminal 1: Infrastructure (Kafka)
+
+Start Zookeeper and Kafka services.
+
+```bash
+# MacOS (Homebrew)
+brew services start zookeeper
+brew services start kafka
+
+```
+
+### Terminal 2: Ingestion (Producers)
+
+Start fetching news. Use the "fake" ingestor for immediate demo data.
+
+```bash
+source .venv/bin/activate
+# Real data (slow flow)
+python3 -m ingestion.ingest_news_finhub &
+# Mock data (fast flow for demo)
+python3 -m ingestion.ingest_fake
+
+```
+
+### Terminal 3: Indexing Service (The Worker)
+
+This script bridges Kafka and Azure. It must run in the background to fill the database.
+
+```bash
+source .venv/bin/activate
+python3 indexer_service.py
+
+```
+
+*You should see logs like: `✅ Indexé: TSLA jumps 5%...*`
+
+### Terminal 4: User Interface (The App)
+
+Launch the web interface.
+
+```bash
+source .venv/bin/activate
+streamlit run rag_app_ui.py
+
+```
+
+---
+
+## 🎮 Features & Usage
+
+* **Full Cloud Integration:** Data persists in Azure AI Search, no local RAM storage.
+* **Hybrid Search:** Combines keyword search (BM25) with Vector Search (Cosine Similarity) for maximum relevance.
+* **Real-Time:** News is searchable milliseconds after ingestion.
+* **Scalable:** The decoupled Kafka architecture handles high throughput.
+
+**Example Query:**
+
+> *"Why is NVDA stock moving today?"*
+> **Result:** The system retrieves the latest articles from Azure, cites the source (e.g., "FakeNewsGenerator" or "Finnhub"), and generates a summarized answer using GPT-4.
+
+---
+
+## 🛠️ Troubleshooting
+
+* **`DummyBuffer object has no attribute...`**: You are likely using the wrong import in `rag_app_ui.py`. Ensure it imports `rag_app_azure`, which handles the cloud connection correctly.
+* **`Invalid document key`**: Azure IDs cannot contain special characters. Ensure `indexer_service.py` uses Base64 encoding for IDs.
+* **Kafka Connection Refused**: Check if `localhost:9092` is reachable. Restart Kafka services in Terminal 1.
+
+```
+
+```
