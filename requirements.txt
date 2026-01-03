@@ -6,3 +6,7 @@ requests-cache
 pandas
 bs4
 kafka-python
+azure-search-documents
+azure-core
+openai
+confluent-kafka
