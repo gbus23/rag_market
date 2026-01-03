@@ -98,7 +98,7 @@ class RAGAppAzure:
         ])
         print(f"🧾 Contexte:\n{context_str}")
         # 4. Génération (Via Azure OpenAI GPT)
-        prompt = f"""Tu es un analyste financier expert. Utilise UNIQUEMENT le contexte ci-dessous pour répondre.
+        prompt = f"""Tu es un analyste financier expert. Utilise UNIQUEMENT le contexte ci-dessous pour répondre et cite les source à la fin.
         
         Contexte:
         {context_str}
