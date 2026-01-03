@@ -10,7 +10,6 @@ import requests
 from openai import AzureOpenAI
 
 # --- CONFIG ---
-# (Reprendre les mêmes configs Azure que ci-dessus)
 AZURE_SEARCH_ENDPOINT = "https://vectordbfundidcardfree.search.windows.net"
 AZURE_SEARCH_KEY = os.getenv("AZURE_SEARCH_KEY")
 INDEX_NAME = "rag-index"
@@ -20,7 +19,6 @@ AZURE_OPENAI_KEY = os.getenv("OPENAI_KEY")
 EMBEDDING_MODEL = "text-embedding-3-small"
 
 # Pour le LLM (Génération) - On garde Ollama local ou on passe sur Azure GPT
-# Ici je garde Ollama pour minimiser les changements, mais on peut switcher.
 OLLAMA_BASE_URL = "http://localhost:11434"
 MODEL_NAME = "mistral" 
 
@@ -28,7 +26,7 @@ MODELS = {
     "model-router": {
         "api_version": "2024-12-01-preview",
         "endpoint": AZURE_OPENAI_ENDPOINT,
-        "deployment": "model-router"  # Remplacez par le nom de votre déploiement
+        "deployment": "model-router"  
     }
 }
 
@@ -62,7 +60,7 @@ class RAGAppAzure:
             azure_endpoint=AZURE_OPENAI_ENDPOINT
         )
         
-        # Hack pour l'UI: on simule un buffer vide
+        # on simule un buffer vide
         self.buffer = DummyBuffer() 
         print("☁️ RAG App connectée à Azure AI Search")
 
@@ -107,7 +105,7 @@ class RAGAppAzure:
         
         Question: {question}
         
-        Réponse concise:"""
+        Réponse concise (en anglais):"""
         
         return self._call_ollama(prompt)
 
